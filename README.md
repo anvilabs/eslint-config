@@ -19,7 +19,7 @@ $ npm install --save-dev eslint eslint-config-anvilabs
 
 Then add the extends to your `.eslintrc`:
 
-```json
+```js
 {
   "extends": "anvilabs",
   "rules": {
@@ -34,7 +34,7 @@ This config also exposes a few other configs that we use often and pull in as ne
 
 You can use them standalone:
 
-```json
+```js
 {
   "extends": "anvilabs/<config-name>"
 }
@@ -42,7 +42,7 @@ You can use them standalone:
 
 Or in combination with the base config (recommended)
 
-```json
+```js
 {
   "extends": ["anvilabs", "anvilabs/<config-name>"]
 }

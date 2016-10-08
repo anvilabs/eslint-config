@@ -1,0 +1,82 @@
+{
+  "name": "eslint-config-anvilabs",
+  "version": "1.0.0",
+  "description": "Anvilabs' ESLint config, following our internal styleguide",
+  "keywords": [
+    "eslint",
+    "eslint config",
+    "config",
+    "anvilabs",
+    "styleguide"
+  ],
+  "repository": "anvilabs/eslint-config-anvilabs",
+  "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
+  "bugs": {
+    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ayan Yenbekbay",
+    "email": "ayan.yenb@gmail.com",
+    "url": "http://yenbekbay.me"
+  },
+  "engines": {
+    "node": ">=6.0",
+    "npm": ">=3.0"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "jest.js",
+    "react.js",
+    "react-base.js",
+    "react-native.js"
+  ],
+  "scripts": {
+    "commit": "git-cz",
+    "test": "npm-run-all --parallel lint find-new-rules",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "find-new-rules": "npm-run-all --parallel find-new-rules:*",
+    "find-new-rules:base": "eslint-find-rules --unused ./index.js",
+    "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest.js",
+    "find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
+    "find-new-rules:react-native": "eslint-find-rules --unused ./other/test/react-native.js",
+    "commitmsg": "validate-commit-msg",
+    "prepush": "npm test",
+    "release": "standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "peerDependencies": {
+    "eslint": "^3.7.1"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-flowtype": "^2.20.0",
+    "eslint-plugin-fp": "^2.2.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jasmine": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-lodash-fp": "^2.0.1",
+    "eslint-plugin-no-use-extend-native": "^0.3.8",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-react": "^6.3.0",
+    "eslint-plugin-react-native": "^2.0.0",
+    "eslint-plugin-unicorn": "^1.0.0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.8.6",
+    "cz-conventional-changelog": "^1.2.0",
+    "eslint": "^3.7.1",
+    "eslint-find-rules": "^1.14.0",
+    "husky": "^0.11.8",
+    "npm-run-all": "^3.1.0",
+    "standard-version": "^3.0.0",
+    "validate-commit-msg": "^2.8.2"
+  }
+}

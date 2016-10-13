@@ -7,6 +7,8 @@ module.exports = {
   ],
   rules: {
     'no-use-before-define': 0,
+    'global-require': 0,
+    'no-console': 0,
 
     'fp/no-class': 0,
     'fp/no-mutation': [2, {

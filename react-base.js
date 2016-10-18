@@ -5,6 +5,9 @@ module.exports = {
   rules: {
     'global-require': 0,
     'no-use-before-define': 0,
+    'no-unused-expressions': [2, {
+      allowShortCircuit: true,
+    }],
 
     'fp/no-class': 0,
     'fp/no-mutation': [2, {

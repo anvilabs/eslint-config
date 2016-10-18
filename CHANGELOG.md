@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v1.3.0...v1.4.0) (2016-10-18)
+
+
+### Bug Fixes
+
+* **find-new-rules:** use fixed eslint minor version ([28f1705](https://github.com/anvilabs/eslint-config-anvilabs/commit/28f1705))
+
+
+### Features
+
+* **react:** make several `react-native` rules applicable to `react` ([c516c80](https://github.com/anvilabs/eslint-config-anvilabs/commit/c516c80))
+* **react-base:** allow `no-unused-expressions` with short circuit ([f857c8f](https://github.com/anvilabs/eslint-config-anvilabs/commit/f857c8f))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v1.2.0...v1.3.0) (2016-10-13)
 

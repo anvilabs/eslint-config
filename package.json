@@ -65,8 +65,8 @@
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jasmine": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-lodash-fp": "^2.0.1",
-    "eslint-plugin-no-use-extend-native": "^0.3.8",
+    "eslint-plugin-lodash-fp": "^2.1.1",
+    "eslint-plugin-no-use-extend-native": "^0.3.11",
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-react": "^6.3.0",
     "eslint-plugin-react-native": "^2.0.0",
@@ -78,7 +78,7 @@
     "eslint": "^3.7.1",
     "eslint-find-rules": "^1.14.0",
     "husky": "^0.11.8",
-    "npm-run-all": "^3.1.0",
+    "npm-run-all": "^3.1.1",
     "standard-version": "^3.0.0",
     "validate-commit-msg": "^2.8.2"
   }

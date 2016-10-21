@@ -8,6 +8,7 @@ module.exports = {
   ],
   plugins: [
     'babel',
+    'eslint-comments',
     'flowtype',
     'fp',
     'lodash-fp',
@@ -21,15 +22,15 @@ module.exports = {
     },
   },
   rules: {
-    'array-bracket-spacing': 0, // disable in favor of `babel/array-bracket-spacing`
-    'arrow-parens': 0, // disable in favor of `babel/arrow-parens`
-    'generator-star-spacing': 0, // disable in favor of `babel/generator-star-spacing`
+    'array-bracket-spacing': 0, // in favor of `babel/array-bracket-spacing`
+    'arrow-parens': 0, // in favor of `babel/arrow-parens`
+    'generator-star-spacing': 0, // in favor of `babel/generator-star-spacing`
     'max-len': [1, 80],
-    'no-duplicate-imports': 0, // disable in favor of `import/no-duplicates`
+    'no-duplicate-imports': 0, // in favor of `import/no-duplicates`
     'no-multiple-empty-lines': [1, { max: 1 }],
     'no-underscore-dangle': 0,
-    'object-curly-spacing': 0, // disable in favor of `babel/object-curly-spacing`
-    'object-shorthand': 0, // disable in favor of `babel/object-shorthand`
+    'object-curly-spacing': 0, // in favor of `babel/object-curly-spacing`
+    'object-shorthand': 0, // in favor of `babel/object-shorthand`
 
     'babel/array-bracket-spacing': [2, 'never'],
     'babel/arrow-parens': [2, 'as-needed'],
@@ -40,6 +41,15 @@ module.exports = {
     'babel/no-await-in-loop': 2,
     'babel/object-curly-spacing': [2, 'always'],
     'babel/object-shorthand': [2, 'always'],
+
+    'eslint-comments/disable-enable-pair': 2,
+    'eslint-comments/no-duplicate-disable': 2,
+    'eslint-comments/no-unlimited-disable': 2,
+    'eslint-comments/no-unused-disable': 2,
+    'eslint-comments/no-unused-enable': 2,
+    'eslint-comments/no-use': [2, {
+      allow: ['eslint-disable', 'eslint-disable-line', 'eslint-disable-next-line', 'eslint-enable'],
+    }],
 
     'flowtype/delimiter-dangle': [2, 'always-multiline'],
     'flowtype/no-dupe-keys': 2,
@@ -70,5 +80,6 @@ module.exports = {
     'promise/param-names': 2,
 
     'unicorn/filename-case': 0,
+    'unicorn/no-abusive-eslint-disable': 0, // in favor of `eslint-comments/no-unlimited-disable`
   },
 };

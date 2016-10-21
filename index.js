@@ -73,11 +73,13 @@ module.exports = {
 
     'no-use-extend-native/no-use-extend-native': 2,
 
-    'promise/always-catch': 0, // deprecated
     'promise/always-return': 2,
     'promise/catch-or-return': 2,
     'promise/no-native': 0,
+    'promise/no-return-wrap': 2,
     'promise/param-names': 2,
+    'promise/prefer-await-to-callbacks': 2,
+    'promise/prefer-await-to-then': 2,
 
     'unicorn/filename-case': 0,
     'unicorn/no-abusive-eslint-disable': 0, // in favor of `eslint-comments/no-unlimited-disable`

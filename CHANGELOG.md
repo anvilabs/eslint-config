@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v1.4.0...v1.5.0) (2016-10-21)
+
+
+### Features
+
+* **base:** add `eslint-plugin-eslint-comments` rules ([3ed0742](https://github.com/anvilabs/eslint-config-anvilabs/commit/3ed0742))
+* **base:** update `eslint-plugin-promise` and add its new rules ([7fac677](https://github.com/anvilabs/eslint-config-anvilabs/commit/7fac677))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v1.3.0...v1.4.0) (2016-10-18)
 

@@ -34,7 +34,7 @@ module.exports = {
 
     'babel/array-bracket-spacing': [2, 'never'],
     'babel/arrow-parens': [2, 'as-needed'],
-    'babel/flow-object-type': 0, // leave here until migrated to `eslint-plugin-flowtype`
+    'babel/flow-object-type': 0, // in favor of `flowtype/object-type-delimiter`
     'babel/func-params-comma-dangle': [2, 'always-multiline'],
     'babel/generator-star-spacing': [2, { before: false, after: true }],
     'babel/new-cap': [2, { newIsCap: true }],
@@ -53,6 +53,7 @@ module.exports = {
 
     'flowtype/delimiter-dangle': [2, 'always-multiline'],
     'flowtype/no-dupe-keys': 2,
+    'flowtype/object-type-delimiter': [2, 'comma'],
     'flowtype/require-parameter-type': 2,
     'flowtype/semi': 2,
     'flowtype/sort-keys': 0,

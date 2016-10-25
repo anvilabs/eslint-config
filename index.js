@@ -24,6 +24,7 @@ module.exports = {
   rules: {
     'array-bracket-spacing': 0, // in favor of `babel/array-bracket-spacing`
     'arrow-parens': 0, // in favor of `babel/arrow-parens`
+    'func-name-matching': 0, // leave it here until the new `eslint-config-airbnb` release
     'generator-star-spacing': 0, // in favor of `babel/generator-star-spacing`
     'max-len': [1, 80],
     'no-duplicate-imports': 0, // in favor of `import/no-duplicates`

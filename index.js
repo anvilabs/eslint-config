@@ -24,6 +24,7 @@ module.exports = {
   rules: {
     'array-bracket-spacing': 0, // in favor of `babel/array-bracket-spacing`
     'arrow-parens': 0, // in favor of `babel/arrow-parens`
+    'func-name-matching': 0, // leave it here until the new `eslint-config-airbnb` release
     'generator-star-spacing': 0, // in favor of `babel/generator-star-spacing`
     'max-len': [1, 80],
     'no-duplicate-imports': 0, // in favor of `import/no-duplicates`
@@ -77,7 +78,7 @@ module.exports = {
     'promise/always-return': 2,
     'promise/catch-or-return': 2,
     'promise/no-native': 0,
-    'promise/no-return-wrap': 2,
+    'promise/no-return-wrap': 0, // https://github.com/xjamundx/eslint-plugin-promise/issues/34
     'promise/param-names': 2,
     'promise/prefer-await-to-callbacks': 2,
     'promise/prefer-await-to-then': 2,

@@ -28,9 +28,10 @@
   "files": [
     "index.js",
     "jest.js",
-    "react.js",
+    "lodash.js",
     "react-base.js",
-    "react-native.js"
+    "react-native.js",
+    "react.js"
   ],
   "scripts": {
     "commit": "git-cz",

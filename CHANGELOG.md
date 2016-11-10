@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v1.6.3...v2.0.0) (2016-11-10)
+
+
+### Features
+
+* extract eslint-plugin-lodash-fp rules into a separate config ([65e5069](https://github.com/anvilabs/eslint-config-anvilabs/commit/65e5069))
+* remove eslint-plugin-fp rules ([76555f7](https://github.com/anvilabs/eslint-config-anvilabs/commit/76555f7))
+* update to latest eslint and eslint-config-airbnb versions ([9db1563](https://github.com/anvilabs/eslint-config-anvilabs/commit/9db1563))
+
+
+### BREAKING CHANGES
+
+* Both eslint and eslint-config-airbnb had major version bumps, and thus many rules were changed/added.
+* Extending the base configuration does not include the [eslint-plugin-lodash-fp](https://github.com/jfmengels/eslint-plugin-lodash-fp) rules no more.
+* All rules specified by [eslint-plugin-fp](https://github.com/jfmengels/eslint-plugin-lodash-fp) have been removed.
+
+
+
 <a name="1.6.3"></a>
 ## [1.6.3](https://github.com/anvilabs/eslint-config-anvilabs/compare/v1.6.2...v1.6.3) (2016-10-25)
 

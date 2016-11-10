@@ -675,11 +675,10 @@ eslint-config-airbnb-base@^10.0.0:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-10.0.1.tgz#f17d4e52992c1d45d1b7713efbcd5ecd0e7e0506"
 
-eslint-find-rules@^1.14.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/eslint-find-rules/-/eslint-find-rules-1.14.0.tgz#2c86da4a4d3633b6442e7ebf10fae440e1118897"
+eslint-find-rules:
+  version "1.14.3"
+  resolved "https://registry.yarnpkg.com/eslint-find-rules/-/eslint-find-rules-1.14.3.tgz#51ff8169f0bfaacf3575edd8c439a94d919cdada"
   dependencies:
-    chalk "^1.1.3"
     cliui "^3.2.0"
     eslint-rule-documentation "^1.0.0"
     path-is-absolute "1.0.0"

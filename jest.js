@@ -8,9 +8,4 @@ module.exports = {
   plugins: [
     'jasmine',
   ],
-  rules: {
-    'fp/no-let': 0,
-    'fp/no-mutation': 0,
-    'fp/no-unused-expression': 0,
-  },
 };

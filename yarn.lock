@@ -756,14 +756,6 @@ eslint-plugin-flowtype@^2.23.0:
   dependencies:
     lodash "^4.15.0"
 
-eslint-plugin-fp@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-fp/-/eslint-plugin-fp-2.2.0.tgz#619a9a1d162bae4005e41e9541c4c09ee621fafb"
-  dependencies:
-    create-eslint-index "^1.0.0"
-    lodash "^4.13.1"
-    req-all "^0.1.0"
-
 eslint-plugin-import@^1.16.0:
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-1.16.0.tgz#b2fa07ebcc53504d0f2a4477582ec8bff1871b9f"

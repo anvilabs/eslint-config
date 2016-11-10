@@ -62,7 +62,6 @@
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-eslint-comments": "^0.1.1",
     "eslint-plugin-flowtype": "^2.23.0",
-    "eslint-plugin-fp": "^2.2.0",
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jasmine": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^2.2.3",

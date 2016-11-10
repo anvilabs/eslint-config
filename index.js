@@ -2,7 +2,6 @@ module.exports = {
   extends: [
     'airbnb/base',
     'plugin:flowtype/recommended',
-    'plugin:fp/recommended',
     'plugin:lodash-fp/recommended',
     'plugin:unicorn/recommended',
   ],
@@ -10,7 +9,6 @@ module.exports = {
     'babel',
     'eslint-comments',
     'flowtype',
-    'fp',
     'lodash-fp',
     'no-use-extend-native',
     'promise',
@@ -58,10 +56,6 @@ module.exports = {
     'flowtype/require-parameter-type': 2,
     'flowtype/semi': 2,
     'flowtype/sort-keys': 0,
-
-    'fp/no-mutation': ['error', { commonjs: true }],
-    'fp/no-nil': 0,
-    'fp/no-throw': 0,
 
     'import/order': [1, {
       groups: [

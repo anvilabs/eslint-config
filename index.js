@@ -2,14 +2,12 @@ module.exports = {
   extends: [
     'airbnb/base',
     'plugin:flowtype/recommended',
-    'plugin:lodash-fp/recommended',
     'plugin:unicorn/recommended',
   ],
   plugins: [
     'babel',
     'eslint-comments',
     'flowtype',
-    'lodash-fp',
     'no-use-extend-native',
     'promise',
     'unicorn',

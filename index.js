@@ -47,8 +47,10 @@ module.exports = {
 
     'flowtype/delimiter-dangle': [2, 'always-multiline'],
     'flowtype/no-dupe-keys': 2,
+    'flowtype/no-primitive-constructor-types': 2,
     'flowtype/object-type-delimiter': [2, 'comma'],
     'flowtype/require-parameter-type': 2,
+    'flowtype/require-variable-type': 0,
     'flowtype/semi': 2,
     'flowtype/sort-keys': 0,
 

@@ -79,8 +79,8 @@
     "eslint": "~3.9.1",
     "eslint-find-rules": "^1.14.3",
     "husky": "^0.11.8",
-    "npm-run-all": "^3.1.1",
-    "standard-version": "^3.0.0",
+    "npm-run-all": "^3.1.2",
+    "standard-version": "^4.0.0",
     "validate-commit-msg": "^2.8.2"
   }
 }

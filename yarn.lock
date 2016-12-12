@@ -747,9 +747,9 @@ eslint-plugin-import:
     minimatch "^3.0.3"
     pkg-up "^1.0.0"
 
-eslint-plugin-jasmine:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jasmine/-/eslint-plugin-jasmine-2.1.0.tgz#acf7dc4a2eb8c1db403e136283e990d093648b1e"
+eslint-plugin-jasmine@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jasmine/-/eslint-plugin-jasmine-2.2.0.tgz#7135879383c39a667c721d302b9f20f0389543de"
 
 eslint-plugin-jsx-a11y@~2.2.3:
   version "2.2.3"

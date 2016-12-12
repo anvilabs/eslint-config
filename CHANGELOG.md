@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v2.0.1...v2.1.0) (2016-12-12)
+
+
+### Features
+
+* **base:** update eslint-plugin-promise and add its new rules ([88ef7ac](https://github.com/anvilabs/eslint-config-anvilabs/commit/88ef7ac))
+* **base:** update flowtype/require-variable-type and add its new rules ([4e4440e](https://github.com/anvilabs/eslint-config-anvilabs/commit/4e4440e))
+* **jest:** update eslint-plugin-jasmine ([17864c0](https://github.com/anvilabs/eslint-config-anvilabs/commit/17864c0))
+* **react-native:** update eslint-plugin-react-native ([f9abb88](https://github.com/anvilabs/eslint-config-anvilabs/commit/f9abb88))
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/anvilabs/eslint-config-anvilabs/compare/v2.0.0...v2.0.1) (2016-11-10)
 

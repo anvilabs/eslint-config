@@ -18,21 +18,19 @@ module.exports = {
     },
   },
   rules: {
-    'arrow-parens': 0, // in favor of `babel/arrow-parens`
-    'func-name-matching': 0, // leave it here until the new `eslint-config-airbnb` release
     'max-len': [1, 80],
-    'no-duplicate-imports': 0, // in favor of `import/no-duplicates`
     'no-multiple-empty-lines': [1, { max: 1 }],
     'no-underscore-dangle': 0,
     'object-curly-spacing': 0, // in favor of `babel/object-curly-spacing`
 
     'babel/array-bracket-spacing': 0,
-    'babel/arrow-parens': [2, 'as-needed'],
-    'babel/flow-object-type': 0, // in favor of `flowtype/object-type-delimiter`
+    'babel/arrow-parens': 0,
+    'babel/flow-object-type': 0,
     'babel/func-params-comma-dangle': 0,
     'babel/generator-star-spacing': 0,
     'babel/new-cap': [2, { newIsCap: true }],
-    'babel/no-await-in-loop': 2,
+    'babel/no-await-in-loop': 0,
+    'babel/no-invalid-this': 0,
     'babel/object-curly-spacing': [2, 'always'],
     'babel/object-shorthand': 0,
 

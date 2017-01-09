@@ -41,6 +41,7 @@
     "find-new-rules": "npm-run-all --parallel find-new-rules:*",
     "find-new-rules:base": "eslint-find-rules --unused ./index.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest.js",
+    "find-new-rules:lodash": "eslint-find-rules --unused ./other/test/lodash.js",
     "find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
     "find-new-rules:react-native": "eslint-find-rules --unused ./other/test/react-native.js",
     "commitmsg": "validate-commit-msg",
@@ -56,27 +57,27 @@
     }
   },
   "peerDependencies": {
-    "eslint": "~3.9.1"
+    "eslint": "^3.13.0"
   },
   "dependencies": {
-    "eslint-config-airbnb": "^13.0.0",
-    "eslint-plugin-babel": "^3.3.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-eslint-comments": "^1.0.0",
-    "eslint-plugin-flowtype": "^2.29.1",
+    "eslint-plugin-flowtype": "^2.29.2",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jasmine": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "~2.2.3",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-lodash-fp": "^2.1.3",
     "eslint-plugin-no-use-extend-native": "^0.3.12",
     "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-react": "^6.6.0",
+    "eslint-plugin-react": "^6.9.0",
     "eslint-plugin-react-native": "^2.2.1",
     "eslint-plugin-unicorn": "^1.0.0"
   },
   "devDependencies": {
     "commitizen": "^2.9.5",
     "cz-conventional-changelog": "^1.2.0",
-    "eslint": "~3.9.1",
+    "eslint": "^3.13.0",
     "eslint-find-rules": "^1.14.3",
     "husky": "^0.12.0",
     "npm-run-all": "^4.0.0",

@@ -25,7 +25,7 @@ module.exports = {
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
     }],
-    'no-multiple-empty-lines': [1, { max: 1 }],
+    'no-multiple-empty-lines': [2, { max: 1 }],
     'no-underscore-dangle': 0,
     'object-curly-spacing': 0, // in favor of `babel/object-curly-spacing`
 
@@ -58,7 +58,7 @@ module.exports = {
     'flowtype/semi': 2,
     'flowtype/sort-keys': 0,
 
-    'import/order': [1, {
+    'import/order': [2, {
       groups: [
         'builtin',
         'external',
@@ -73,10 +73,10 @@ module.exports = {
     'promise/always-return': 2,
     'promise/avoid-new': 0,
     'promise/catch-or-return': 2,
-    'promise/no-callback-in-promise': 1,
+    'promise/no-callback-in-promise': 2,
     'promise/no-native': 0,
-    'promise/no-nesting': 1,
-    'promise/no-promise-in-callback': 1,
+    'promise/no-nesting': 2,
+    'promise/no-promise-in-callback': 2,
     'promise/no-return-wrap': 0, // https://github.com/xjamundx/eslint-plugin-promise/issues/34
     'promise/param-names': 2,
     'promise/prefer-await-to-callbacks': 2,

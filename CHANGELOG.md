@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v2.1.0...v3.0.0) (2017-01-09)
+
+
+### Features
+
+* update to latest eslint and eslint-config-airbnb versions ([72f396d](https://github.com/anvilabs/eslint-config-anvilabs/commit/72f396d))
+
+
+### BREAKING CHANGES
+
+* Both eslint and eslint-config-airbnb had major version bumps, and thus many rules were changed/added.
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v2.0.1...v2.1.0) (2016-12-12)
 

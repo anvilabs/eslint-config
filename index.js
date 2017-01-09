@@ -18,7 +18,13 @@ module.exports = {
     },
   },
   rules: {
-    'max-len': [1, 80],
+    'max-len': [2, 80, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
     'no-multiple-empty-lines': [1, { max: 1 }],
     'no-underscore-dangle': 0,
     'object-curly-spacing': 0, // in favor of `babel/object-curly-spacing`

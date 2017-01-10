@@ -1,8 +1,12 @@
-# OSX
-#
+# macOS
 .DS_Store
 
 # node.js
-#
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules/
-npm-debug.log
+
+# Logs
+*.log
+
+# Private environment variables
+.env.github-releaser

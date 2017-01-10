@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v3.0.0...v4.0.0) (2017-01-10)
+
+
+### Features
+
+* **base:** add a bunch of new strict rules ([17b7ba6](https://github.com/anvilabs/eslint-config-anvilabs/commit/17b7ba6))
+* **base:** provide more lenient options for `max-len` rule ([ce45bb0](https://github.com/anvilabs/eslint-config-anvilabs/commit/ce45bb0))
+* **base:** set error level for all warning rules ([b240735](https://github.com/anvilabs/eslint-config-anvilabs/commit/b240735))
+
+
+### BREAKING CHANGES
+
+* base: Some rules that haven't previously affected the lint command's exit code may now cause the linter to fail.
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v2.1.0...v3.0.0) (2017-01-09)
 

@@ -102,9 +102,9 @@ module.exports = {
     'promise/no-native': 0,
     'promise/no-nesting': 2,
     'promise/no-promise-in-callback': 2,
-    'promise/no-return-wrap': 0, // https://github.com/xjamundx/eslint-plugin-promise/issues/34
+    'promise/no-return-wrap': 2,
     'promise/param-names': 2,
-    'promise/prefer-await-to-callbacks': 2,
+    'promise/prefer-await-to-callbacks': 0,
     'promise/prefer-await-to-then': 2,
 
     'unicorn/filename-case': 0,

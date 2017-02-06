@@ -62,9 +62,9 @@
   },
   "dependencies": {
     "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-eslint-comments": "^1.0.0",
-    "eslint-plugin-flowtype": "^2.29.2",
+    "eslint-plugin-flowtype": "^2.30.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jasmine": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
@@ -73,7 +73,7 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-react": "^6.9.0",
     "eslint-plugin-react-native": "^2.2.1",
-    "eslint-plugin-unicorn": "^1.0.0"
+    "eslint-plugin-unicorn": "^2.0.1"
   },
   "devDependencies": {
     "commitizen": "^2.9.5",

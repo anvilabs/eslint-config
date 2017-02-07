@@ -11,6 +11,7 @@ module.exports = {
     'flowtype',
     'no-unused-vars-rest',
     'no-use-extend-native',
+    'prettier',
     'promise',
     'unicorn',
   ],
@@ -115,6 +116,18 @@ module.exports = {
     ],
 
     'no-use-extend-native/no-use-extend-native': 2,
+
+    'prettier/prettier': [
+      2,
+      {
+        printWidth: 80,
+        tabWidth: 2,
+        singleQuote: true,
+        trailingComma: true,
+        bracketSpacing: false,
+        parser: 'babylon',
+      },
+    ],
 
     'promise/always-return': 2,
     'promise/avoid-new': 0,

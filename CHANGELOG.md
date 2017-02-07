@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v4.0.0...v4.1.0) (2017-02-07)
+
+
+### Features
+
+* disable conflicting rules with eslint-config-prettier ([9b8f0b3](https://github.com/anvilabs/eslint-config-anvilabs/commit/9b8f0b3))
+* update to latest eslint and eslint-config-airbnb versions ([868d92a](https://github.com/anvilabs/eslint-config-anvilabs/commit/868d92a))
+* **base:** add eslint-plugin-no-unused-vars-rest rules ([1f512ee](https://github.com/anvilabs/eslint-config-anvilabs/commit/1f512ee))
+* **base:** disable `import/prefer-default-export` rule ([6d865b5](https://github.com/anvilabs/eslint-config-anvilabs/commit/6d865b5))
+* **base:** update eslint-plugin-promise rules ([e39ca58](https://github.com/anvilabs/eslint-config-anvilabs/commit/e39ca58))
+
+
+### BREAKING CHANGES
+
+* Many rules were removed to facilitate formatting with
+prettier.
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v3.0.0...v4.0.0) (2017-01-10)
 

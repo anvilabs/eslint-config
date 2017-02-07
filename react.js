@@ -2,10 +2,7 @@ module.exports = {
   env: {
     browser: true,
   },
-  extends: [
-    './react-base.js',
-    'eslint-config-airbnb/rules/react-a11y',
-  ],
+  extends: ['./react-base.js', 'eslint-config-airbnb/rules/react-a11y'],
   rules: {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y
     'jsx-a11y/accessible-emoji': 0,

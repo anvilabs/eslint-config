@@ -1,8 +1,5 @@
 module.exports = {
-  extends: [
-    'eslint-config-airbnb/rules/react',
-    'prettier/react',
-  ],
+  extends: ['eslint-config-airbnb/rules/react', 'prettier/react'],
   rules: {
     'global-require': 0,
     'no-use-before-define': 0,

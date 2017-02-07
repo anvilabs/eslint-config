@@ -21,8 +21,7 @@
     "url": "http://yenbekbay.me"
   },
   "engines": {
-    "node": ">=6.0",
-    "npm": ">=3.0"
+    "node": ">=6.0.0"
   },
   "main": "index.js",
   "files": [
@@ -55,7 +54,7 @@
     }
   },
   "peerDependencies": {
-    "eslint": "^3.13.1"
+    "eslint": "^3.15.0"
   },
   "dependencies": {
     "eslint-config-airbnb": "^14.1.0",

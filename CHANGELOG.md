@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.1.0"></a>
+# [5.1.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v5.0.0...v5.1.0) (2017-02-07)
+
+
+### Features
+
+* **base:** disable some unnecessary eslint-plugin-unicorn rules ([c74b294](https://github.com/anvilabs/eslint-config-anvilabs/commit/c74b294))
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v4.1.1...v5.0.0) (2017-02-07)
 

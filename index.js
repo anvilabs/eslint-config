@@ -141,7 +141,10 @@ module.exports = {
     'promise/prefer-await-to-callbacks': 0,
     'promise/prefer-await-to-then': 2,
     // https://github.com/sindresorhus/eslint-plugin-unicorn
+    'unicorn/catch-error-name': 0,
+    'unicorn/custom-error-definition': 0,
     'unicorn/filename-case': 0,
     'unicorn/no-abusive-eslint-disable': 0, // in favor of `eslint-comments/no-unlimited-disable`
+    'unicorn/prefer-type-error': 0,
   },
 };

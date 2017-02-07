@@ -7,6 +7,7 @@ module.exports = {
     'eslint-config-airbnb/rules/react-a11y',
   ],
   rules: {
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y
     'jsx-a11y/accessible-emoji': 0,
     'jsx-a11y/aria-activedescendant-has-tabindex': 0,
     'jsx-a11y/iframe-has-title': 0,

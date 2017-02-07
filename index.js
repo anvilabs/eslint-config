@@ -48,7 +48,7 @@ module.exports = {
     ],
     'no-underscore-dangle': 0,
     'no-unused-vars': 0, // in favor of `no-unused-vars-rest/no-unused-vars`
-
+    // https://github.com/babel/eslint-plugin-babel
     'babel/array-bracket-spacing': 0,
     'babel/arrow-parens': 0,
     'babel/flow-object-type': 0,
@@ -65,7 +65,7 @@ module.exports = {
     'babel/no-invalid-this': 2,
     'babel/object-curly-spacing': 0,
     'babel/object-shorthand': 0,
-
+    // https://github.com/mysticatea/eslint-plugin-eslint-comments
     'eslint-comments/disable-enable-pair': 2,
     'eslint-comments/no-duplicate-disable': 2,
     'eslint-comments/no-unlimited-disable': 2,
@@ -82,7 +82,7 @@ module.exports = {
         ],
       },
     ],
-
+    // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/delimiter-dangle': [2, 'always-multiline'],
     'flowtype/no-dupe-keys': 2,
     'flowtype/no-primitive-constructor-types': 2,
@@ -91,7 +91,7 @@ module.exports = {
     'flowtype/require-variable-type': 0,
     'flowtype/semi': 2,
     'flowtype/sort-keys': 0,
-
+    // https://github.com/benmosher/eslint-plugin-import
     'import/order': [
       2,
       {
@@ -105,7 +105,7 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 0,
-
+    // https://github.com/bryanrsmith/eslint-plugin-no-unused-vars-rest
     'no-unused-vars-rest/no-unused-vars': [
       2,
       {
@@ -114,9 +114,9 @@ module.exports = {
         args: 'after-used',
       },
     ],
-
+    // https://github.com/dustinspecker/eslint-plugin-no-use-extend-native
     'no-use-extend-native/no-use-extend-native': 2,
-
+    // https://github.com/not-an-aardvark/eslint-plugin-prettier
     'prettier/prettier': [
       2,
       {
@@ -128,7 +128,7 @@ module.exports = {
         parser: 'babylon',
       },
     ],
-
+    // https://github.com/xjamundx/eslint-plugin-promise
     'promise/always-return': 2,
     'promise/avoid-new': 0,
     'promise/catch-or-return': 2,
@@ -140,7 +140,7 @@ module.exports = {
     'promise/param-names': 2,
     'promise/prefer-await-to-callbacks': 0,
     'promise/prefer-await-to-then': 2,
-
+    // https://github.com/sindresorhus/eslint-plugin-unicorn
     'unicorn/filename-case': 0,
     'unicorn/no-abusive-eslint-disable': 0, // in favor of `eslint-comments/no-unlimited-disable`
   },

@@ -33,7 +33,7 @@
     "react.js"
   ],
   "scripts": {
-    "release:publish": "git push --follow-tags --no-verify && env-cmd ./.env.github-releaser conventional-github-releaser -p angular && npm publish",
+    "publish-github": "git push --follow-tags --no-verify && env-cmd ./.env.github-releaser conventional-github-releaser -p angular",
     "release": "standard-version",
     "prepush": "npm test",
     "commitmsg": "validate-commit-msg",

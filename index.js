@@ -103,6 +103,7 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
+    'import/prefer-default-export': 0,
 
     'no-unused-vars-rest/no-unused-vars': [
       2,

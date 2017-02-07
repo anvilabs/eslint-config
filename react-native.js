@@ -1,6 +1,11 @@
 module.exports = {
   extends: ['./react-base.js'],
   plugins: ['react-native'],
+  globals: {
+    __DEV__: false,
+    fetch: false,
+    navigator: false,
+  },
   rules: {
     'no-console': 0,
     // https://github.com/Intellicode/eslint-plugin-react-native

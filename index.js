@@ -9,6 +9,7 @@ module.exports = {
     'babel',
     'eslint-comments',
     'flowtype',
+    'no-unused-vars-rest',
     'no-use-extend-native',
     'promise',
     'unicorn',
@@ -45,6 +46,7 @@ module.exports = {
       },
     ],
     'no-underscore-dangle': 0,
+    'no-unused-vars': 0, // in favor of `no-unused-vars-rest/no-unused-vars`
 
     'babel/array-bracket-spacing': 0,
     'babel/arrow-parens': 0,
@@ -99,6 +101,15 @@ module.exports = {
           ['parent', 'sibling', 'index'],
         ],
         'newlines-between': 'always',
+      },
+    ],
+
+    'no-unused-vars-rest/no-unused-vars': [
+      2,
+      {
+        ignoreDestructuredVarsWithRest: true,
+        vars: 'local',
+        args: 'after-used',
       },
     ],
 

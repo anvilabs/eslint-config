@@ -789,6 +789,10 @@ eslint-plugin-lodash-fp:
     lodash "^4.11.1"
     req-all "^0.1.0"
 
+eslint-plugin-no-unused-vars-rest@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-no-unused-vars-rest/-/eslint-plugin-no-unused-vars-rest-1.0.4.tgz#b98e3f9492e926d010cee1c527722afc9f3f73b0"
+
 eslint-plugin-no-use-extend-native:
   version "0.3.12"
   resolved "https://registry.yarnpkg.com/eslint-plugin-no-use-extend-native/-/eslint-plugin-no-use-extend-native-0.3.12.tgz#3ad9a00c2df23b5d7f7f6be91550985a4ab701ea"

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-anvilabs",
-  "version": "4.1.1",
+  "version": "5.0.0",
   "description": "Anvilabs' ESLint config, following our internal styleguide",
   "keywords": [
     "eslint",

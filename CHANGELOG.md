@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v4.1.1...v5.0.0) (2017-02-07)
+
+
+### Features
+
+* **base:** use eslint-plugin-prettier for formatting with prettier ([3368e0a](https://github.com/anvilabs/eslint-config-anvilabs/commit/3368e0a))
+* **react-base:** disable rules conflicting with prettier ([a795fe7](https://github.com/anvilabs/eslint-config-anvilabs/commit/a795fe7))
+
+
+### BREAKING CHANGES
+
+* base: ESLint will now report an error whenever your code does not match `prettier` formatting style.
+
+
+
 <a name="4.1.1"></a>
 ## [4.1.1](https://github.com/anvilabs/eslint-config-anvilabs/compare/v4.1.0...v4.1.1) (2017-02-07)
 

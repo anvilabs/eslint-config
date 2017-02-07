@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.2.0"></a>
+# [5.2.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v5.1.0...v5.2.0) (2017-02-07)
+
+
+### Features
+
+* **base:** disable conflicting eslint-plugin-flowtype rules ([44290f2](https://github.com/anvilabs/eslint-config-anvilabs/commit/44290f2))
+* **react-native:** add globals ([4b7b407](https://github.com/anvilabs/eslint-config-anvilabs/commit/4b7b407))
+
+
+
 <a name="5.1.0"></a>
 # [5.1.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v5.0.0...v5.1.0) (2017-02-07)
 

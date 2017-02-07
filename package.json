@@ -35,7 +35,7 @@
   ],
   "scripts": {
     "commit": "git-cz",
-    "test": "npm-run-all --parallel lint find-new-rules",
+    "test": "npm-run-all --parallel lint find-new-rules prettier-check",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "find-new-rules": "npm-run-all --parallel find-new-rules:*",
@@ -44,6 +44,7 @@
     "find-new-rules:lodash": "eslint-find-rules --unused ./other/test/lodash.js",
     "find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
     "find-new-rules:react-native": "eslint-find-rules --unused ./other/test/react-native.js",
+    "prettier-check": "eslint --print-config index.js | eslint-config-prettier-check",
     "commitmsg": "validate-commit-msg",
     "prepush": "npm test",
     "release": "standard-version",
@@ -62,6 +63,7 @@
   },
   "dependencies": {
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-prettier": "^1.0.3",
     "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-flowtype": "^2.30.0",

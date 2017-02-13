@@ -709,9 +709,9 @@ eslint-config-airbnb@^14.1.0:
   dependencies:
     eslint-config-airbnb-base "^11.1.0"
 
-eslint-config-prettier@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-1.0.3.tgz#9ca450a6ae52b80fa826f28ae7b52d4995d8b4eb"
+eslint-config-prettier@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-1.1.1.tgz#3ba3d8d02e73b84f5ecb1abe2b6015d6feacdabb"
   dependencies:
     get-stdin "^5.0.1"
 
@@ -816,9 +816,9 @@ eslint-plugin-prettier@^2.0.0:
   dependencies:
     requireindex "~1.1.0"
 
-eslint-plugin-promise@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.4.0.tgz#6ba9048c2df57be77d036e0c68918bc9b4fc4195"
+eslint-plugin-promise@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.4.1.tgz#6911a9010bf84e17d82e19e0ab0f80ab3ad6db4c"
 
 eslint-plugin-react-native@^2.2.1:
   version "2.2.1"

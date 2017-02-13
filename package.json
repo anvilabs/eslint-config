@@ -43,11 +43,11 @@
     "lint:fix": "eslint --fix .",
     "find-new-rules": "npm-run-all --parallel find-new-rules:*",
     "find-new-rules:base": "eslint-find-rules --unused ./index.js",
-    "find-new-rules:flowtype": "eslint-find-rules --unused ./other/test/flowtype.js",
-    "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest.js",
-    "find-new-rules:lodash": "eslint-find-rules --unused ./other/test/lodash.js",
-    "find-new-rules:react-native": "eslint-find-rules --unused ./other/test/react-native.js",
-    "find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
+    "find-new-rules:flowtype": "eslint-find-rules --unused ./test/fixtures/flowtype.js",
+    "find-new-rules:jest": "eslint-find-rules --unused ./test/fixtures/jest.js",
+    "find-new-rules:lodash": "eslint-find-rules --unused ./test/fixtures/lodash.js",
+    "find-new-rules:react-native": "eslint-find-rules --unused ./test/fixtures/react-native.js",
+    "find-new-rules:react": "eslint-find-rules --unused ./test/fixtures/react.js",
     "prettier-check": "eslint --print-config index.js | eslint-config-prettier-check"
   },
   "config": {

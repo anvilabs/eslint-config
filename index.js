@@ -1,26 +1,14 @@
 module.exports = {
-  extends: [
-    'airbnb/base',
-    'plugin:flowtype/recommended',
-    'plugin:unicorn/recommended',
-    'prettier',
-    'prettier/flowtype',
-  ],
+  extends: ['airbnb/base', 'plugin:unicorn/recommended', 'prettier'],
   plugins: [
     'babel',
     'eslint-comments',
-    'flowtype',
     'no-unused-vars-rest',
     'no-use-extend-native',
     'prettier',
     'promise',
     'unicorn',
   ],
-  settings: {
-    flowtype: {
-      onlyFilesWithFlowAnnotation: true,
-    },
-  },
   rules: {
     'capitalized-comments': [2, 'never'],
     complexity: [2, 11],
@@ -83,10 +71,6 @@ module.exports = {
         ],
       },
     ],
-    // https://github.com/gajus/eslint-plugin-flowtype
-    'flowtype/no-dupe-keys': 2,
-    'flowtype/no-primitive-constructor-types': 2,
-    'flowtype/require-parameter-type': 2,
     // https://github.com/benmosher/eslint-plugin-import
     'import/order': [
       2,

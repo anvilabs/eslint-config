@@ -7,17 +7,17 @@
 [![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/conventional-changelog/standard-version)
 [![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
 
-Anvilabs' ESLint config, following our internal styleguide. Feel free to use these conventions :-)
+Anvilabs' ESLint config, following our internal styleguide. Makes use of [prettier](https://github.com/jlongster/prettier) for formatting. 
 
 ## Usage
 
 Install the conventions by running:
 
 ```bash
-$ npm install --save-dev eslint eslint-config-anvilabs
+$ npm install --save-dev eslint prettier eslint-config-anvilabs
 ```
 
-Then add the extends to your `.eslintrc`:
+Then add the extends to your `.eslintrc.json`:
 
 ```js
 {
@@ -48,10 +48,18 @@ Or in combination with the base config (recommended)
 }
 ```
 
+Available configs include:
+
+- "anvilabs/flowtype" for [Flow](https://flowtype.org/) related rules
+- "anvilabs/jest" for [Jest](https://facebook.github.io/jest/) related rules
+- "anvilabs/lodash" for [Lodash](https://lodash.com/) related rules
+- "anvilabs/react" for [React](https://facebook.github.io/react/) related rules
+- "anvilabs/react-native" for [React Native](https://facebook.github.io/react-native/) related rules
+
 ### Things to know
 
-- The default config opts to use the `eslint-plugin-babel` rules over the ESLint rules to enable the stage features that ESLint doesn't support.
 - All plugins needed for rules used by these configs are dependencies of this module so you don't have to install anything on your own.
+- Running ESLint will report an error if your code does not match prettier style. The rule is autofixable – if you run ESLint with the `--fix` flag, your code will be formatted according to prettier style.
 
 ## Credits
 

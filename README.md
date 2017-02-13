@@ -50,11 +50,11 @@ Or in combination with the base config (recommended)
 
 Available configs include:
 
-- "anvilabs/flowtype" for [Flow](https://flowtype.org/) related rules
-- "anvilabs/jest" for [Jest](https://facebook.github.io/jest/) related rules
-- "anvilabs/lodash" for [Lodash](https://lodash.com/) related rules
-- "anvilabs/react" for [React](https://facebook.github.io/react/) related rules
-- "anvilabs/react-native" for [React Native](https://facebook.github.io/react-native/) related rules
+- `"anvilabs/flowtype"` for [Flow](https://flowtype.org/) related rules
+- `"anvilabs/jest"` for [Jest](https://facebook.github.io/jest/) related rules
+- `"anvilabs/lodash"` for [Lodash](https://lodash.com/) related rules
+- `"anvilabs/react"` for [React](https://facebook.github.io/react/) related rules
+- `"anvilabs/react-native"` for [React Native](https://facebook.github.io/react-native/) related rules
 
 ### Things to know
 

@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v5.2.0...v6.0.0) (2017-02-13)
+
+
+### Features
+
+* adapt config for new eslint-config-prettier version ([dcee7d6](https://github.com/anvilabs/eslint-config-anvilabs/commit/dcee7d6))
+* extract flowtyped related rules into a separate config ([24aff64](https://github.com/anvilabs/eslint-config-anvilabs/commit/24aff64))
+
+
+### BREAKING CHANGES
+
+* Extending the base configuration does not include any flowtype related rules no more.
+
+
+
 <a name="5.2.0"></a>
 # [5.2.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v5.1.0...v5.2.0) (2017-02-07)
 

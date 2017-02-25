@@ -5,6 +5,7 @@ module.exports = {
     __DEV__: false,
     fetch: false,
     navigator: false,
+    requestAnimationFrame: false,
   },
   rules: {
     'no-console': 0,

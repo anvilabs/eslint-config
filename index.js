@@ -17,6 +17,7 @@ module.exports = {
     'max-params': [2, 3],
     'max-statements-per-line': [2, {max: 1}],
     'max-statements': [2, 15],
+    'no-compare-neg-zero': 2,
     'no-confusing-arrow': 0,
     'no-implicit-coercion': [
       2,
@@ -37,6 +38,7 @@ module.exports = {
     ],
     'no-underscore-dangle': 0,
     'no-unused-vars': 0, // in favor of `no-unused-vars-rest/no-unused-vars`
+    semi: 0, // in favor of `babel/semi`
     // https://github.com/babel/eslint-plugin-babel
     'babel/array-bracket-spacing': 0,
     'babel/arrow-parens': 0,
@@ -54,6 +56,7 @@ module.exports = {
     'babel/no-invalid-this': 2,
     'babel/object-curly-spacing': 0,
     'babel/object-shorthand': 0,
+    'babel/semi': [2, 'always'],
     // https://github.com/mysticatea/eslint-plugin-eslint-comments
     'eslint-comments/disable-enable-pair': 2,
     'eslint-comments/no-duplicate-disable': 2,

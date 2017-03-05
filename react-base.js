@@ -10,6 +10,8 @@ module.exports = {
       },
     ],
     // https://github.com/yannickcr/eslint-plugin-react
+    'react/forbid-elements': 0,
+    'react/forbid-foreign-prop-types': 0,
     'react/jsx-filename-extension': 0,
     'react/no-unused-prop-types': 0, // https://github.com/yannickcr/eslint-plugin-react/issues/885
     'react/sort-comp': [
@@ -27,5 +29,6 @@ module.exports = {
         ],
       },
     ],
+    'react/void-dom-elements-no-children': 0,
   },
 };

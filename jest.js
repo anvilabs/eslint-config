@@ -1,7 +1,7 @@
 module.exports = {
   env: {
-    jest: true,
+    'jest/globals': true,
   },
-  extends: ['plugin:jasmine/recommended'],
-  plugins: ['jasmine'],
+  extends: ['plugin:jest/recommended'],
+  plugins: ['jest'],
 };

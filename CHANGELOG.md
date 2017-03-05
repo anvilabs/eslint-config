@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.2.0"></a>
+# [6.2.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v6.1.0...v6.2.0) (2017-03-05)
+
+
+### Features
+
+* add support for new rules ([212d584](https://github.com/anvilabs/eslint-config-anvilabs/commit/212d584))
+* **jest:** replace eslint-plugin-jasmine with eslint-plugin-jest ([38bbfa2](https://github.com/anvilabs/eslint-config-anvilabs/commit/38bbfa2))
+
+
+
 <a name="6.1.0"></a>
 # [6.1.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v6.0.0...v6.1.0) (2017-02-25)
 

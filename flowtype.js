@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['prettier/flowtype'],
   plugins: ['flowtype'],
+  parser: 'babel-eslint',
   settings: {
     flowtype: {
       onlyFilesWithFlowAnnotation: true,

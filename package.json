@@ -60,12 +60,12 @@
     "prettier": "^0.22.0"
   },
   "dependencies": {
-    "babel-eslint": "^7.1.1",
+    "babel-eslint": "^7.2.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-prettier": "^1.5.0",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-eslint-comments": "^1.0.0",
-    "eslint-plugin-flowtype": "^2.30.3",
+    "eslint-plugin-flowtype": "^2.30.4",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-jsx-a11y": "^4.0.0",
@@ -74,7 +74,7 @@
     "eslint-plugin-no-use-extend-native": "^0.3.12",
     "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-react": "^6.10.3",
     "eslint-plugin-react-native": "^2.3.1",
     "eslint-plugin-unicorn": "^2.1.0"
   },

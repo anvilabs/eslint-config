@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/anvilabs/eslint-config-anvilabs/compare/v6.2.3...v7.0.0) (2017-03-24)
+
+
+### Features
+
+* **flowtype:** use stricter configuration ([182529b](https://github.com/anvilabs/eslint-config-anvilabs/commit/182529b))
+
+
+### BREAKING CHANGES
+
+* flowtype: May now report new errors related to flow
+
+
+
 <a name="6.2.3"></a>
 ## [6.2.3](https://github.com/anvilabs/eslint-config-anvilabs/compare/v6.2.2...v6.2.3) (2017-03-11)
 

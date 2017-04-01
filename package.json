@@ -47,7 +47,7 @@
     "test": "npm-run-all --parallel lint find-new-rules prettier-check",
     "commitmsg": "validate-commit-msg",
     "prepush": "npm test",
-    "push": "git push origin master && travis-watch",
+    "push:watch": "git push origin master && travis-watch",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {

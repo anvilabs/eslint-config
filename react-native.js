@@ -3,9 +3,12 @@ module.exports = {
   plugins: ['react-native'],
   globals: {
     __DEV__: false,
+    cancelAnimationFrame: false,
+    cancelIdleCallback: false,
     fetch: false,
     navigator: false,
     requestAnimationFrame: false,
+    requestIdleCallback: false,
   },
   rules: {
     'no-console': 0,

@@ -11,7 +11,9 @@ module.exports = {
     requestIdleCallback: false,
   },
   rules: {
+    'global-require': 0,
     'no-console': 0,
+    'no-use-before-define': 0,
     // https://github.com/Intellicode/eslint-plugin-react-native
     'react-native/no-color-literals': 2,
     'react-native/no-inline-styles': 2,

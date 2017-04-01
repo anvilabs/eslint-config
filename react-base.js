@@ -25,11 +25,9 @@ module.exports = {
         ],
       },
     ],
-    'global-require': 0,
-    'no-unused-expressions': [2, {allowShortCircuit: true}],
-    'no-use-before-define': 0,
-    // https://github.com/yannickcr/eslint-plugin-react
     'jsx-quotes': [2, 'prefer-double'],
+    'no-unused-expressions': [2, {allowShortCircuit: true}],
+    // https://github.com/yannickcr/eslint-plugin-react
     'react/display-name': 0,
     'react/forbid-component-props': 0,
     'react/forbid-elements': 0,

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-anvilabs",
-  "version": "7.0.0",
+  "version": "0.0.0-development",
   "description": "Anvilabs' ESLint config, following our internal styleguide",
   "keywords": [
     "eslint",
@@ -12,7 +12,7 @@
   "repository": "anvilabs/eslint-config-anvilabs",
   "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
   "bugs": {
-    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds/issues"
+    "url": "https://github.com/anvilabs/eslint-config-anvilabs/issues"
   },
   "license": "MIT",
   "author": {
@@ -34,21 +34,20 @@
     "react.js"
   ],
   "scripts": {
-    "publish-github": "git push --follow-tags --no-verify && env-cmd ./.env.github-releaser conventional-github-releaser -p angular",
-    "release": "standard-version",
-    "prepush": "npm test",
-    "commitmsg": "validate-commit-msg",
-    "test": "npm-run-all --parallel lint find-new-rules prettier-check",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "find-new-rules": "npm-run-all --parallel find-new-rules:*",
     "find-new-rules:base": "eslint-find-rules --unused ./index.js",
     "find-new-rules:flowtype": "eslint-find-rules --unused ./test/fixtures/flowtype.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./test/fixtures/jest.js",
     "find-new-rules:lodash": "eslint-find-rules --unused ./test/fixtures/lodash.js",
     "find-new-rules:react-native": "eslint-find-rules --unused ./test/fixtures/react-native.js",
     "find-new-rules:react": "eslint-find-rules --unused ./test/fixtures/react.js",
-    "prettier-check": "eslint --print-config index.js | eslint-config-prettier-check"
+    "find-new-rules": "npm-run-all --parallel find-new-rules:*",
+    "prettier-check": "eslint --print-config index.js | eslint-config-prettier-check",
+    "test": "npm-run-all --parallel lint find-new-rules prettier-check",
+    "commitmsg": "validate-commit-msg",
+    "prepush": "npm test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
     "validate-commit-msg": {
@@ -78,14 +77,12 @@
     "eslint-plugin-unicorn": "^2.1.1"
   },
   "devDependencies": {
-    "conventional-github-releaser": "^1.1.3",
-    "env-cmd": "^5.0.0",
     "eslint": "^3.19.0",
     "eslint-find-rules": "^1.14.3",
     "husky": "^0.13.3",
     "npm-run-all": "^4.0.2",
     "prettier": "^0.22.0",
-    "standard-version": "^4.0.0",
+    "semantic-release": "^6.3.2",
     "validate-commit-msg": "^2.12.0"
   }
 }

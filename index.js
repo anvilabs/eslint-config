@@ -22,7 +22,6 @@ module.exports = {
     'max-statements-per-line': [2, {max: 1}],
     'max-statements': [2, 15],
     'no-compare-neg-zero': 2,
-    'no-confusing-arrow': 0,
     'no-implicit-coercion': [2, {boolean: false, number: true, string: true}],
     'no-magic-numbers': [
       2,

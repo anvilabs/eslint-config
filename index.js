@@ -32,7 +32,6 @@ module.exports = {
         detectObjects: false,
       },
     ],
-    'no-underscore-dangle': 0,
     semi: 0, // deprecated in favor of `babel/semi`
     // https://github.com/babel/eslint-plugin-babel
     'babel/array-bracket-spacing': 0,

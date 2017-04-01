@@ -4,10 +4,9 @@
 [![Version](https://img.shields.io/npm/v/eslint-config-anvilabs.svg)](http://npm.im/eslint-config-anvilabs)
 [![Dependency Status](https://img.shields.io/david/anvilabs/eslint-config-anvilabs.svg)](https://david-dm.org/anvilabs/eslint-config-anvilabs)
 [![devDependency Status](https://img.shields.io/david/dev/anvilabs/eslint-config-anvilabs.svg)](https://david-dm.org/anvilabs/eslint-config-anvilabs?type=dev)
-[![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/conventional-changelog/standard-version)
-[![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-Anvilabs' ESLint config, following our internal styleguide. Makes use of [prettier](https://github.com/jlongster/prettier) for formatting. 
+Anvilabs' ESLint config, following our internal styleguide. Makes use of [prettier](https://github.com/jlongster/prettier) for formatting.
 
 ## Usage
 
@@ -40,7 +39,7 @@ You can use them standalone:
 }
 ```
 
-Or in combination with the base config (recommended)
+Or in combination with the base config (recommended):
 
 ```js
 {
@@ -67,4 +66,4 @@ Inspired by [Kent C. Dodds' ESLint config](https://github.com/kentcdodds/eslint-
 
 ## License
 
-[MIT License](./LICENSE) © Anvilabs LLC 
+[MIT License](./LICENSE) © Anvilabs LLC

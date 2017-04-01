@@ -1,9 +1,8 @@
 module.exports = {
-  extends: ['airbnb/base', 'plugin:unicorn/recommended', 'prettier'],
+  extends: ['airbnb-base', 'plugin:unicorn/recommended', 'prettier'],
   plugins: [
     'babel',
     'eslint-comments',
-    'no-unused-vars-rest',
     'no-use-extend-native',
     'prettier',
     'promise',
@@ -19,14 +18,7 @@ module.exports = {
     'max-statements': [2, 15],
     'no-compare-neg-zero': 2,
     'no-confusing-arrow': 0,
-    'no-implicit-coercion': [
-      2,
-      {
-        boolean: false,
-        number: true,
-        string: true,
-      },
-    ],
+    'no-implicit-coercion': [2, {boolean: false, number: true, string: true}],
     'no-magic-numbers': [
       2,
       {
@@ -37,21 +29,15 @@ module.exports = {
       },
     ],
     'no-underscore-dangle': 0,
-    'no-unused-vars': 0, // in favor of `no-unused-vars-rest/no-unused-vars`
-    semi: 0, // in favor of `babel/semi`
+    'no-unused-vars': 0, // deprecated in favor of `no-unused-vars-rest/no-unused-vars`
+    semi: 0, // deprecated in favor of `babel/semi`
     // https://github.com/babel/eslint-plugin-babel
     'babel/array-bracket-spacing': 0,
     'babel/arrow-parens': 0,
     'babel/flow-object-type': 0,
     'babel/func-params-comma-dangle': 0,
     'babel/generator-star-spacing': 0,
-    'babel/new-cap': [
-      2,
-      {
-        newIsCap: true,
-        capIsNew: true,
-      },
-    ],
+    'babel/new-cap': [2, {newIsCap: true, capIsNew: true}],
     'babel/no-await-in-loop': 0,
     'babel/no-invalid-this': 2,
     'babel/object-curly-spacing': 0,
@@ -88,15 +74,6 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 0,
-    // https://github.com/bryanrsmith/eslint-plugin-no-unused-vars-rest
-    'no-unused-vars-rest/no-unused-vars': [
-      2,
-      {
-        ignoreDestructuredVarsWithRest: true,
-        vars: 'local',
-        args: 'after-used',
-      },
-    ],
     // https://github.com/dustinspecker/eslint-plugin-no-use-extend-native
     'no-use-extend-native/no-use-extend-native': 2,
     // https://github.com/not-an-aardvark/eslint-plugin-prettier

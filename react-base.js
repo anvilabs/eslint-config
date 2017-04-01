@@ -1,21 +1,95 @@
 module.exports = {
-  extends: ['eslint-config-airbnb/rules/react', 'prettier/react'],
+  extends: ['prettier/react'],
+  plugins: ['react'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   rules: {
-    'global-require': 0,
-    'no-use-before-define': 0,
-    'no-unused-expressions': [
+    'class-methods-use-this': [
       2,
       {
-        allowShortCircuit: true,
+        exceptMethods: [
+          'render',
+          'getInitialState',
+          'getDefaultProps',
+          'getChildContext',
+          'componentWillMount',
+          'componentDidMount',
+          'componentWillReceiveProps',
+          'shouldComponentUpdate',
+          'componentWillUpdate',
+          'componentDidUpdate',
+          'componentWillUnmount',
+        ],
       },
     ],
+    'global-require': 0,
+    'no-unused-expressions': [2, {allowShortCircuit: true}],
+    'no-use-before-define': 0,
     // https://github.com/yannickcr/eslint-plugin-react
+    'jsx-quotes': [2, 'prefer-double'],
+    'react/display-name': 0,
+    'react/forbid-component-props': 0,
     'react/forbid-elements': 0,
     'react/forbid-foreign-prop-types': 0,
-    'react/jsx-filename-extension': 0,
-    'react/no-unused-prop-types': 0, // https://github.com/yannickcr/eslint-plugin-react/issues/885
-    'react/sort-comp': [
+    'react/forbid-prop-types': [2, {forbid: ['any', 'array', 'object']}],
+    'react/jsx-boolean-value': [2, 'never'],
+    'react/jsx-filename-extension': [2, {extensions: ['.js']}],
+    'react/jsx-handler-names': [
+      0,
+      {eventHandlerPrefix: 'handle', eventHandlerPropPrefix: 'on'},
+    ],
+    'react/jsx-key': 2,
+    // todo: disable `ignoreRefs` and`allowArrowFunctions` options
+    'react/jsx-no-bind': [
       2,
+      {ignoreRefs: true, allowArrowFunctions: true, allowBind: false},
+    ],
+    'react/jsx-no-comment-textnodes': 2,
+    'react/jsx-no-duplicate-props': [2, {ignoreCase: true}],
+    'react/jsx-no-literals': 0,
+    'react/jsx-no-target-blank': 2,
+    'react/jsx-no-undef': 2,
+    'react/jsx-pascal-case': [2, {allowAllCaps: true, ignore: []}],
+    'react/jsx-sort-prop-types': 0, // deprecated in favor of react/jsx-sort-props
+    'react/jsx-sort-props': 0,
+    'react/jsx-uses-react': 2,
+    'react/jsx-uses-vars': 2,
+    'react/no-array-index-key': 2,
+    'react/no-children-prop': 2,
+    'react/no-comment-textnodes': 0, // deprecated in favor of react/jsx-no-comment-textnodes
+    'react/no-danger-with-children': 2,
+    'react/no-danger': 2,
+    'react/no-deprecated': 2,
+    'react/no-did-mount-set-state': 2,
+    'react/no-did-update-set-state': 2,
+    'react/no-direct-mutation-state': 2,
+    'react/no-find-dom-node': 2,
+    'react/no-is-mounted': 2,
+    'react/no-multi-comp': [2, {ignoreStateless: true}],
+    'react/no-render-return-value': 2,
+    'react/no-set-state': 0,
+    'react/no-string-refs': 2,
+    'react/no-unescaped-entities': 2,
+    'react/no-unknown-property': 2,
+    'react/no-unused-prop-types': 0,
+    'react/prefer-es6-class': [2, 'always'],
+    'react/prefer-stateless-function': 2,
+    'react/prop-types': [
+      2,
+      {ignore: [], customValidators: [], skipUndeclared: false},
+    ],
+    'react/react-in-jsx-scope': 2,
+    'react/require-default-props': 2,
+    'react/require-extension': 0, // deprecated in favor of import/extensions
+    'react/require-optimization': 0,
+    'react/require-render-return': 2,
+    'react/self-closing-comp': 2,
+    // disabled until https://github.com/yannickcr/eslint-plugin-react/pull/685 is merged
+    'react/sort-comp': [
+      0,
       {
         order: [
           'type-annotations',
@@ -29,6 +103,8 @@ module.exports = {
         ],
       },
     ],
-    'react/void-dom-elements-no-children': 0,
+    'react/sort-prop-types': 0,
+    'react/style-prop-object': 2,
+    'react/void-dom-elements-no-children': 2,
   },
 };

@@ -717,15 +717,9 @@ eslint-ast-utils@^1.0.0:
   dependencies:
     lodash.get "^4.4.2"
 
-eslint-config-airbnb-base@^11.1.0:
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.1.0.tgz#dc9b3ec70b8c74dcbe6d6257c9da3992c39ca2ca"
-
-eslint-config-airbnb@^14.1.0:
-  version "14.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-14.1.0.tgz#355d290040bbf8e00bf8b4b19f4b70cbe7c2317f"
-  dependencies:
-    eslint-config-airbnb-base "^11.1.0"
+eslint-config-airbnb-base@^11.1.2:
+  version "11.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.1.2.tgz#259209a7678bf693e31cbe8f953f206b6aa7ccc3"
 
 eslint-config-prettier@^1.5.0:
   version "1.5.0"
@@ -814,10 +808,6 @@ eslint-plugin-lodash-fp:
     eslint-ast-utils "^1.0.0"
     lodash "^4.11.1"
     req-all "^0.1.0"
-
-eslint-plugin-no-unused-vars-rest@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-no-unused-vars-rest/-/eslint-plugin-no-unused-vars-rest-1.0.6.tgz#c690933b8067228a51f904ea922ac9d890fa5bd5"
 
 eslint-plugin-no-use-extend-native:
   version "0.3.12"

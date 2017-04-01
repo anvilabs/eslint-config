@@ -34,7 +34,6 @@ module.exports = {
       },
     ],
     'no-underscore-dangle': 0,
-    'no-unused-vars': 0, // deprecated in favor of `no-unused-vars-rest/no-unused-vars`
     semi: 0, // deprecated in favor of `babel/semi`
     // https://github.com/babel/eslint-plugin-babel
     'babel/array-bracket-spacing': 0,

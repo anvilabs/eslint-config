@@ -57,12 +57,12 @@
   },
   "peerDependencies": {
     "eslint": "^3.19.0",
-    "prettier": "^0.22.0"
+    "prettier": "^1.1.0"
   },
   "dependencies": {
-    "babel-eslint": "^7.2.1",
-    "eslint-config-airbnb-base": "^11.1.2",
-    "eslint-config-prettier": "^1.5.0",
+    "babel-eslint": "^7.2.2",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-config-prettier": "^1.6.0",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-flowtype": "^2.30.4",
@@ -82,9 +82,9 @@
     "eslint-find-rules": "^1.14.3",
     "husky": "^0.13.3",
     "npm-run-all": "^4.0.2",
-    "prettier": "^0.22.0",
+    "prettier": "^1.1.0",
     "semantic-release": "^6.3.2",
     "travis-watch": "^1.16.2",
-    "validate-commit-msg": "^2.12.0"
+    "validate-commit-msg": "^2.12.1"
   }
 }

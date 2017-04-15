@@ -82,6 +82,7 @@ module.exports = {
     'prettier/prettier': [
       2,
       {
+        useTabs: false,
         printWidth: 80,
         tabWidth: 2,
         singleQuote: true,
@@ -89,6 +90,7 @@ module.exports = {
         bracketSpacing: false,
         jsxBracketSameLine: false,
         parser: 'babylon',
+        semi: true,
       },
     ],
     // https://github.com/xjamundx/eslint-plugin-promise

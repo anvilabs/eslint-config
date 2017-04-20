@@ -11,6 +11,7 @@ module.exports = {
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/no-dupe-keys': 2,
     'flowtype/no-primitive-constructor-types': 2,
+    'flowtype/no-types-missing-file-annotation': 2,
     'flowtype/require-parameter-type': 0,
     'flowtype/require-return-type': 0,
     'flowtype/require-valid-file-annotation': [

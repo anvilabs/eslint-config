@@ -14,7 +14,6 @@ module.exports = {
     'unicorn',
   ],
   rules: {
-    'capitalized-comments': [2, 'never'],
     complexity: [2, 11],
     'max-depth': [2, 4],
     'max-nested-callbacks': [2, 3],

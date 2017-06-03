@@ -1,10 +1,5 @@
 module.exports = {
-  extends: [
-    'airbnb-base',
-    'plugin:promise/recommended',
-    'plugin:unicorn/recommended',
-    'prettier',
-  ],
+  extends: ['airbnb-base', 'plugin:promise/recommended', 'prettier'],
   plugins: [
     'babel',
     'eslint-comments',
@@ -99,8 +94,17 @@ module.exports = {
     // https://github.com/sindresorhus/eslint-plugin-unicorn
     'unicorn/catch-error-name': 0,
     'unicorn/custom-error-definition': 0,
+    'unicorn/escape-case': 2,
+    'unicorn/explicit-length-check': 2,
     'unicorn/filename-case': 0,
     'unicorn/no-abusive-eslint-disable': 0, // in favor of `eslint-comments/no-unlimited-disable`
+    'unicorn/no-array-instanceof': 2,
+    'unicorn/no-hex-escape': 2,
+    'unicorn/no-new-buffer': 2,
+    'unicorn/no-process-exit': 2,
+    'unicorn/number-literal-case': 0, // conflicts with prettier
+    'unicorn/prefer-starts-ends-with': 2,
     'unicorn/prefer-type-error': 0,
+    'unicorn/throw-new-error': 2,
   },
 };

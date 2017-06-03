@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb-base', 'plugin:promise/recommended', 'prettier'],
+  extends: ['airbnb-base', 'prettier'],
   plugins: [
     'babel',
     'eslint-comments',
@@ -88,7 +88,15 @@ module.exports = {
       },
     ],
     // https://github.com/xjamundx/eslint-plugin-promise
+    'promise/always-return': 2,
     'promise/avoid-new': 0,
+    'promise/catch-or-return': 2,
+    'promise/no-callback-in-promise': 2,
+    'promise/no-native': 0,
+    'promise/no-nesting': 2,
+    'promise/no-promise-in-callback': 2,
+    'promise/no-return-wrap': 2,
+    'promise/param-names': 2,
     'promise/prefer-await-to-callbacks': 0,
     'promise/prefer-await-to-then': 2,
     // https://github.com/sindresorhus/eslint-plugin-unicorn

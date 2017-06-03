@@ -61,6 +61,7 @@ module.exports = {
       },
     ],
     // https://github.com/benmosher/eslint-plugin-import
+    'import/no-anonymous-default-export': 2,
     'import/order': [
       2,
       {

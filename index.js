@@ -31,7 +31,6 @@ module.exports = {
         detectObjects: false,
       },
     ],
-    semi: 0, // deprecated in favor of `babel/semi`
     // https://github.com/babel/eslint-plugin-babel
     'babel/array-bracket-spacing': 0,
     'babel/arrow-parens': 0,
@@ -43,7 +42,7 @@ module.exports = {
     'babel/no-invalid-this': 2,
     'babel/object-curly-spacing': 0,
     'babel/object-shorthand': 0,
-    'babel/semi': [2, 'always'],
+    'babel/semi': 0,
     // https://github.com/mysticatea/eslint-plugin-eslint-comments
     'eslint-comments/disable-enable-pair': 2,
     'eslint-comments/no-duplicate-disable': 2,

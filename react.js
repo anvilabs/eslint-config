@@ -5,6 +5,6 @@ module.exports = {
   extends: ['./react-base.js', 'plugin:jsx-a11y/recommended'],
   plugins: ['jsx-a11y'],
   rules: {
-    'jsx-a11y/lang': 2,
+    'jsx-a11y/lang': 'error',
   },
 };

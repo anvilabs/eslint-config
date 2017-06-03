@@ -11,12 +11,12 @@ module.exports = {
     requestIdleCallback: false,
   },
   rules: {
-    'global-require': 0,
-    'no-console': 0,
+    'global-require': 'off',
+    'no-console': 'off',
     // https://github.com/Intellicode/eslint-plugin-react-native
-    'react-native/no-color-literals': 2,
-    'react-native/no-inline-styles': 2,
-    'react-native/no-unused-styles': 2,
-    'react-native/split-platform-components': 2,
+    'react-native/no-color-literals': 'error',
+    'react-native/no-inline-styles': 'error',
+    'react-native/no-unused-styles': 'error',
+    'react-native/split-platform-components': 'error',
   },
 };

@@ -25,6 +25,7 @@
   },
   "main": "index.js",
   "files": [
+    "rules/*.js",
     "flowtype.js",
     "index.js",
     "jest.js",

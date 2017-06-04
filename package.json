@@ -44,11 +44,19 @@
     "find-new-rules:react": "eslint-find-rules --unused ./test/fixtures/react.js",
     "find-new-rules": "run-p --silent find-new-rules:*",
     "prettier-check": "eslint --print-config index.js | eslint-config-prettier-check",
-    "test": "run-p --silent lint find-new-rules prettier-check",
+    "jest": "jest",
+    "test": "run-p --silent lint find-new-rules prettier-check jest",
     "commitmsg": "validate-commit-msg",
     "prepush": "npm test",
     "push:watch": "git push origin master && travis-watch",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/rules"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "/__tests__/.+-test\\.js$"
   },
   "config": {
     "validate-commit-msg": {
@@ -81,6 +89,7 @@
     "eslint": "^3.19.0",
     "eslint-find-rules": "^1.14.3",
     "husky": "^0.13.4",
+    "jest": "^20.0.4",
     "npm-run-all": "^4.0.2",
     "prettier": "^1.4.1",
     "semantic-release": "^6.3.6",

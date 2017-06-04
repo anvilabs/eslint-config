@@ -1,3 +1,9 @@
+const path = require('path');
+
+const Rules = require('eslint/lib/rules');
+
+Rules.load(path.join(__dirname, 'rules'));
+
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: [
@@ -9,6 +15,9 @@ module.exports = {
     'unicorn',
   ],
   rules: {
+    // local rules
+    'exports-last': 'error',
+    // http://eslint.org/docs/rules
     complexity: ['error', {max: 11}],
     'max-depth': ['error', {max: 4}],
     'max-nested-callbacks': ['error', {max: 3}],

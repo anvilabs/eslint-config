@@ -24,6 +24,7 @@ module.exports = {
     'max-params': ['error', {max: 3}],
     'max-statements-per-line': ['error', {max: 1}],
     'max-statements': ['error', {max: 15}],
+    'newline-before-return': 'error',
     'no-compare-neg-zero': 'error',
     'no-implicit-coercion': [
       'error',

@@ -29,6 +29,7 @@ module.exports = {
     'jsx-quotes': ['error', 'prefer-double'],
     'no-unused-expressions': ['error', {allowShortCircuit: true}],
     // https://github.com/yannickcr/eslint-plugin-react
+    'react/default-props-match-prop-types': 'error',
     'react/display-name': 'error',
     'react/forbid-component-props': 'off',
     'react/forbid-elements': 'off',
@@ -68,6 +69,7 @@ module.exports = {
     'react/no-find-dom-node': 'error',
     'react/no-is-mounted': 'error',
     'react/no-multi-comp': ['error', {ignoreStateless: true}],
+    'react/no-redundant-should-component-update': 'error',
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
     'react/no-string-refs': 'error',

@@ -14,7 +14,14 @@ module.exports = {
     'flowtype/no-dupe-keys': 'error',
     'flowtype/no-primitive-constructor-types': 'error',
     'flowtype/no-types-missing-file-annotation': 'error',
-    'flowtype/no-weak-types': 'error',
+    'flowtype/no-weak-types': [
+      'error',
+      {
+        any: false,
+        Object: true,
+        Function: true,
+      },
+    ],
     'flowtype/require-parameter-type': 'off',
     'flowtype/require-return-type': 'off',
     'flowtype/require-valid-file-annotation': [

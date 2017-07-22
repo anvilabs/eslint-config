@@ -7,7 +7,6 @@ Rules.load(path.join(__dirname, 'rules'));
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: [
-    'babel',
     'eslint-comments',
     'no-use-extend-native',
     'prettier',
@@ -39,18 +38,6 @@ module.exports = {
         detectObjects: false,
       },
     ],
-    // https://github.com/babel/eslint-plugin-babel
-    'babel/array-bracket-spacing': 'off',
-    'babel/arrow-parens': 'off',
-    'babel/flow-object-type': 'off',
-    'babel/func-params-comma-dangle': 'off',
-    'babel/generator-star-spacing': 'off',
-    'babel/new-cap': 'off',
-    'babel/no-await-in-loop': 'off',
-    'babel/no-invalid-this': 'error',
-    'babel/object-curly-spacing': 'off',
-    'babel/object-shorthand': 'off',
-    'babel/semi': 'off',
     // https://github.com/mysticatea/eslint-plugin-eslint-comments
     'eslint-comments/disable-enable-pair': 'error',
     'eslint-comments/no-duplicate-disable': 'error',

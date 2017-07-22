@@ -2,13 +2,7 @@
   "name": "eslint-config-anvilabs",
   "version": "0.0.0-development",
   "description": "Anvilabs' ESLint config, following our internal styleguide",
-  "keywords": [
-    "eslint",
-    "eslint config",
-    "config",
-    "anvilabs",
-    "styleguide"
-  ],
+  "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
   "repository": "anvilabs/eslint-config-anvilabs",
   "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
   "bugs": {
@@ -26,6 +20,7 @@
   "main": "index.js",
   "files": [
     "rules/*.js",
+    "babel.js",
     "flowtype.js",
     "index.js",
     "jest.js",
@@ -38,6 +33,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "find-new-rules:base": "eslint-find-rules --unused ./index.js",
+    "find-new-rules:babel": "eslint-find-rules --unused ./babel.js",
     "find-new-rules:flowtype": "eslint-find-rules --unused ./test/fixtures/flowtype.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./test/fixtures/jest.js",
     "find-new-rules:lodash": "eslint-find-rules --unused ./test/fixtures/lodash.js",
@@ -53,15 +49,14 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "jest": {
-    "roots": [
-      "<rootDir>/rules"
-    ],
+    "roots": ["<rootDir>/rules"],
     "testEnvironment": "node",
     "testRegex": "/__tests__/.+-test\\.js$"
   },
   "config": {
     "validate-commit-msg": {
-      "maxSubjectLength": 72
+      "maxSubjectLength": 72,
+      "types": "conventional-commit-types"
     }
   },
   "peerDependencies": {

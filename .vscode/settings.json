@@ -2,6 +2,11 @@
   "editor.insertSpaces": true,
   "editor.rulers": [80],
   "editor.tabSize": 2,
+  "[json]": {
+    "editor.formatOnSave": true
+  },
 
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+
+  "prettier.javascriptEnable": []
 }

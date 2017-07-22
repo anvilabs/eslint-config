@@ -8,5 +8,9 @@
 
   "eslint.autoFixOnSave": true,
 
+  "files.exclude": {
+    ".eslintcache": true
+  },
+
   "prettier.javascriptEnable": []
 }

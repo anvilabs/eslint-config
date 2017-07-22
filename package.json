@@ -31,7 +31,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "lint:fix": "eslint --cache --fix .",
     "find-new-rules:base": "eslint-find-rules --unused ./index.js",
     "find-new-rules:babel": "eslint-find-rules --unused ./babel.js",
     "find-new-rules:flowtype": "eslint-find-rules --unused ./test/fixtures/flowtype.js",
@@ -47,6 +47,10 @@
     "prepush": "npm test",
     "push:watch": "git push origin master && travis-watch",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "lint-staged": {
+    "{*.js,{rules,test}/**/*.js}": ["eslint --ext --cache --fix", "git add"],
+    "{*.json,.vscode/*.json}": ["prettier --write", "git add"]
   },
   "jest": {
     "roots": ["<rootDir>/rules"],
@@ -86,6 +90,7 @@
     "eslint-find-rules": "^3.1.1",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
+    "lint-staged": "^4.0.2",
     "npm-run-all": "^4.0.2",
     "prettier": "^1.5.3",
     "semantic-release": "^6.3.6",

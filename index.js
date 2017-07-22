@@ -96,7 +96,6 @@ module.exports = {
         trailingComma: 'all',
         bracketSpacing: false,
         jsxBracketSameLine: false,
-        parser: 'babylon',
         semi: true,
       },
     ],

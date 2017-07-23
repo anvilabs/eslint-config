@@ -10,21 +10,23 @@ Anvilabs' ESLint config, following our internal styleguide. Makes use of [pretti
 
 ## Usage
 
-Install the conventions by running:
+This config relies dangerously on npm@3/yarn flatter tree for its dependencies (because of eslint/issues/3458), so installation may be as simple as:
 
 ```bash
-$ npm install --save-dev eslint prettier eslint-config-anvilabs
+$ yarn add eslint prettier eslint-config-anvilabs --dev
+# or
+$ npm install eslint prettier eslint-config-anvilabs --save-dev
 ```
 
-Then add the extends to your `.eslintrc.json`:
+Then add the extends to your `.eslintrc.js`:
 
 ```js
-{
-  "extends": "anvilabs",
-  "rules": {
+module.exports = {
+  extends: 'anvilabs',
+  rules: {
     // your overrides
-  }
-}
+  },
+};
 ```
 
 ### Other configs
@@ -34,31 +36,30 @@ This config also exposes a few other configs that we use often and pull in as ne
 You can use them standalone:
 
 ```js
-{
-  "extends": "anvilabs/<config-name>"
-}
+module.exports = {
+  extends: 'anvilabs/<config-name>',
+};
 ```
 
 Or in combination with the base config (recommended):
 
 ```js
-{
-  "extends": ["anvilabs", "anvilabs/<config-name>"]
-}
+module.exports = {
+  extends: ['anvilabs', 'anvilabs/<config-name>'],
+};
 ```
 
 Available configs include:
 
-- `"anvilabs/babel"` for usage with [babel transformations](https://github.com/babel/babel-eslint)
-- `"anvilabs/flowtype"` for [Flow](https://flowtype.org/) related rules
-- `"anvilabs/jest"` for [Jest](https://facebook.github.io/jest/) related rules
-- `"anvilabs/lodash"` for [Lodash](https://lodash.com/) related rules
-- `"anvilabs/react"` for [React](https://facebook.github.io/react/) related rules
-- `"anvilabs/react-native"` for [React Native](https://facebook.github.io/react-native/) related rules
+- `'anvilabs/babel'` for usage with [babel transformations](https://github.com/babel/babel-eslint)
+- `'anvilabs/flowtype'` for [Flow](https://flowtype.org/) related rules
+- `'anvilabs/jest'` for [Jest](https://facebook.github.io/jest/) related rules
+- `'anvilabs/lodash'` for [Lodash](https://lodash.com/) related rules
+- `'anvilabs/react'` for [React](https://facebook.github.io/react/) related rules
+- `'anvilabs/react-native'` for [React Native](https://facebook.github.io/react-native/) related rules
 
 ### Things to know
 
-- All plugins needed for rules used by these configs are dependencies of this module so you don't have to install anything on your own.
 - Running ESLint will report an error if your code does not match prettier style. The rule is autofixable – if you run ESLint with the `--fix` flag, your code will be formatted according to prettier style.
 
 ## Credits

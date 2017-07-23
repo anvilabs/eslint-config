@@ -25,6 +25,21 @@ module.exports = {
     ],
     'import/no-named-as-default-member': 'off', // conflicts with typescript
     'import/no-named-as-default': 'off', // conflicts with typescript
+    // https://github.com/not-an-aardvark/eslint-plugin-prettier
+    'prettier/prettier': [
+      'error',
+      {
+        useTabs: false,
+        printWidth: 80,
+        tabWidth: 2,
+        singleQuote: true,
+        trailingComma: 'all',
+        bracketSpacing: false,
+        jsxBracketSameLine: false,
+        parser: 'typescript',
+        semi: true,
+      },
+    ],
     // https://github.com/nzakas/eslint-plugin-typescript
     'typescript/explicit-member-accessibility': 'error',
     'typescript/interface-name-prefix': 'error',

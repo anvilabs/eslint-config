@@ -27,18 +27,20 @@
     "lodash.js",
     "react-base.js",
     "react-native.js",
-    "react.js"
+    "react.js",
+    "typescript.js"
   ],
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --cache --fix .",
+    "find-new-rules:babel": "eslint-find-rules --unused ./test/fixtures/babel.js",
     "find-new-rules:base": "eslint-find-rules --unused ./index.js",
-    "find-new-rules:babel": "eslint-find-rules --unused ./babel.js",
     "find-new-rules:flowtype": "eslint-find-rules --unused ./test/fixtures/flowtype.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./test/fixtures/jest.js",
     "find-new-rules:lodash": "eslint-find-rules --unused ./test/fixtures/lodash.js",
     "find-new-rules:react-native": "eslint-find-rules --unused ./test/fixtures/react-native.js",
     "find-new-rules:react": "eslint-find-rules --unused ./test/fixtures/react.js",
+    "find-new-rules:typescript": "eslint-find-rules --unused ./test/fixtures/typescript.js",
     "find-new-rules": "run-p --silent find-new-rules:*",
     "prettier-check": "eslint --print-config index.js | eslint-config-prettier-check",
     "jest": "jest",
@@ -83,7 +85,9 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.0.1",
     "eslint-plugin-react-native": "^2.3.2",
-    "eslint-plugin-unicorn": "^2.1.1"
+    "eslint-plugin-typescript": "^0.3.0",
+    "eslint-plugin-unicorn": "^2.1.1",
+    "typescript-eslint-parser": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^3.19.0",

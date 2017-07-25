@@ -2,7 +2,13 @@
   "name": "eslint-config-anvilabs",
   "version": "0.0.0-development",
   "description": "Anvilabs' ESLint config, following our internal styleguide",
-  "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
+  "keywords": [
+    "eslint",
+    "eslint config",
+    "config",
+    "anvilabs",
+    "styleguide"
+  ],
   "repository": "anvilabs/eslint-config-anvilabs",
   "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
   "bugs": {
@@ -51,11 +57,19 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "lint-staged": {
-    "{*.js,{rules,test}/**/*.js}": ["eslint --ext --cache --fix", "git add"],
-    "{*.json,.vscode/*.json}": ["prettier --write", "git add"]
+    "{*.js,{rules,test}/**/*.js}": [
+      "eslint --ext --cache --fix",
+      "git add"
+    ],
+    "{*.json,.vscode/*.json}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "jest": {
-    "roots": ["<rootDir>/rules"],
+    "roots": [
+      "<rootDir>/rules"
+    ],
     "testEnvironment": "node",
     "testRegex": "/__tests__/.+-test\\.js$"
   },
@@ -71,7 +85,7 @@
   },
   "dependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-airbnb-base": "^11.3.1",
     "eslint-config-prettier": "^2.1.1",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-eslint-comments": "^1.0.1",
@@ -84,13 +98,13 @@
     "eslint-plugin-prettier": "^2.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.0.1",
-    "eslint-plugin-react-native": "^2.3.2",
+    "eslint-plugin-react-native": "^3.0.1",
     "eslint-plugin-typescript": "^0.3.0",
     "eslint-plugin-unicorn": "^2.1.1",
     "typescript-eslint-parser": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.3.0",
     "eslint-find-rules": "^3.1.1",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
@@ -99,6 +113,6 @@
     "prettier": "^1.5.3",
     "semantic-release": "^6.3.6",
     "travis-watch": "^1.17.1",
-    "validate-commit-msg": "^2.13.0"
+    "validate-commit-msg": "^2.13.1"
   }
 }

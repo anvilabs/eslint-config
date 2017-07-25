@@ -2,13 +2,7 @@
   "name": "eslint-config-anvilabs",
   "version": "0.0.0-development",
   "description": "Anvilabs' ESLint config, following our internal styleguide",
-  "keywords": [
-    "eslint",
-    "eslint config",
-    "config",
-    "anvilabs",
-    "styleguide"
-  ],
+  "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
   "repository": "anvilabs/eslint-config-anvilabs",
   "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
   "bugs": {
@@ -57,19 +51,11 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "lint-staged": {
-    "{*.js,{rules,test}/**/*.js}": [
-      "eslint --ext --cache --fix",
-      "git add"
-    ],
-    "{*.json,.vscode/*.json}": [
-      "prettier --write",
-      "git add"
-    ]
+    "{*.js,{rules,test}/**/*.js}": ["eslint --ext --cache --fix", "git add"],
+    "{*.json,.vscode/*.json}": ["prettier --write", "git add"]
   },
   "jest": {
-    "roots": [
-      "<rootDir>/rules"
-    ],
+    "roots": ["<rootDir>/rules"],
     "testEnvironment": "node",
     "testRegex": "/__tests__/.+-test\\.js$"
   },
@@ -80,8 +66,8 @@
     }
   },
   "peerDependencies": {
-    "eslint": "^3.19.0",
-    "prettier": "^1.5.2"
+    "eslint": "^4.3.0",
+    "prettier": "^1.5.3"
   },
   "dependencies": {
     "babel-eslint": "^7.2.3",

@@ -1,13 +1,13 @@
 const {RuleTester} = require('eslint');
 
-const rule = require('../exports-last');
+const rule = require('../exportsLast');
 
 const ruleTester = new RuleTester({
   parser: 'babel-eslint',
   parserOptions: {ecmaVersion: 2015, sourceType: 'module'},
 });
 
-ruleTester.run('exports-last', rule, {
+ruleTester.run('exportsLast', rule, {
   valid: [
     `const foo = 'bar'; const bar = 'baz';`,
     `const foo = 'bar'; export {foo};`,

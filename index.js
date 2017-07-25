@@ -1,8 +1,11 @@
-const path = require('path');
+const Plugins = require('eslint/lib/config/plugins');
 
-const Rules = require('eslint/lib/rules');
-
-Rules.load(path.join(__dirname, 'rules'));
+// monkey patch ESLint to include local rules
+const originalLoadAll = Plugins.prototype.loadAll;
+Plugins.prototype.loadAll = function loadAll(...args) {
+  this.define('local', require('./rules')); // eslint-disable-line global-require
+  originalLoadAll.apply(this, args);
+};
 
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
@@ -15,7 +18,7 @@ module.exports = {
   ],
   rules: {
     // local rules
-    'exports-last': 'error',
+    'local/exports-last': 'error',
     // http://eslint.org/docs/rules
     complexity: ['error', {max: 11}],
     'max-depth': ['error', {max: 4}],

@@ -47,7 +47,6 @@
     "test": "run-p --silent lint find-new-rules prettier-check jest",
     "commitmsg": "validate-commit-msg",
     "prepush": "yarn test",
-    "push:watch": "git push origin master && travis-watch",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "lint-staged": {
@@ -98,7 +97,6 @@
     "npm-run-all": "^4.0.2",
     "prettier": "^1.5.3",
     "semantic-release": "^6.3.6",
-    "travis-watch": "^1.17.1",
     "validate-commit-msg": "^2.14.0"
   }
 }

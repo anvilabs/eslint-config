@@ -49,6 +49,21 @@ module.exports = {
 };
 ```
 
+You can also use [ESLint@4 overrides](http://eslint.org/docs/user-guide/configuring#configuration-based-on-glob-patterns) to apply a config only to certain files. For example:
+
+```js
+module.exports = {
+  ...
+  overrides: [
+    Object.assign(
+      {
+        files: ['**/__tests__/*-test.js', '**/__mocks__/*.js'],
+      },
+      require('eslint-config-anvilabs/jest')
+    ),
+  ],
+};
+
 Available configs include:
 
 - `'anvilabs/babel'` for usage with [babel transformations](https://github.com/babel/babel-eslint)

@@ -46,12 +46,12 @@
     "jest": "jest",
     "test": "run-p --silent lint find-new-rules prettier-check jest",
     "commitmsg": "validate-commit-msg",
-    "prepush": "npm test",
+    "prepush": "yarn test",
     "push:watch": "git push origin master && travis-watch",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "lint-staged": {
-    "{*.js,{rules,test}/**/*.js}": ["eslint --ext --cache --fix", "git add"],
+    "{*.js,{rules,test}/**/*.js}": ["eslint --cache --fix", "git add"],
     "{*.json,.vscode/*.json}": ["prettier --write", "git add"]
   },
   "jest": {
@@ -73,8 +73,8 @@
     "babel-eslint": "^7.2.3",
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-config-prettier": "^2.1.1",
-    "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-eslint-comments": "^1.0.1",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-eslint-comments": "^1.0.3",
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jest": "^20.0.3",
@@ -99,6 +99,6 @@
     "prettier": "^1.5.3",
     "semantic-release": "^6.3.6",
     "travis-watch": "^1.17.1",
-    "validate-commit-msg": "^2.13.1"
+    "validate-commit-msg": "^2.14.0"
   }
 }

@@ -1004,13 +1004,13 @@ eslint-module-utils@^2.1.1:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
-eslint-plugin-babel@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-babel/-/eslint-plugin-babel-4.1.1.tgz#ef285c87039b67beb3bbd227f5b0eed4fb376b87"
+eslint-plugin-babel@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-babel/-/eslint-plugin-babel-4.1.2.tgz#79202a0e35757dd92780919b2336f1fa2fe53c1e"
 
-eslint-plugin-eslint-comments@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-1.0.2.tgz#365a65ee3fd87f9958badb1a7eb13a40bac6c0b3"
+eslint-plugin-eslint-comments@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-1.0.3.tgz#29443862c1a27219bf41342099ee951f9966004c"
   dependencies:
     escape-string-regexp "^1.0.5"
 
@@ -3979,9 +3979,9 @@ uuid@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
 
-validate-commit-msg@^2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/validate-commit-msg/-/validate-commit-msg-2.13.1.tgz#71386ea45349c4970e091296f132dcf67dc50714"
+validate-commit-msg@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/validate-commit-msg/-/validate-commit-msg-2.14.0.tgz#e5383691012cbb270dcc0bc2a4effebe14890eac"
   dependencies:
     conventional-commit-types "^2.0.0"
     find-parent-dir "^0.3.0"

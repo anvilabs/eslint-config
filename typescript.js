@@ -16,6 +16,21 @@ module.exports = {
         'no-undef': 'off', // conflicts with typescript
         'no-unused-vars': 'off', // conflicts with typescript
         'no-useless-constructor': 'off', // conflicts with typescript
+        'spaced-comment': [
+          'error',
+          'always',
+          {
+            line: {
+              exceptions: ['-', '+'],
+              markers: ['=', '!', '/'], // space here to support sprockets directives
+            },
+            block: {
+              exceptions: ['-', '+'],
+              markers: ['=', '!'], // space here to support sprockets directives
+              balanced: true,
+            },
+          },
+        ],
         strict: 'off', // conflicts with typescript
         // https://github.com/benmosher/eslint-plugin-import
         'import/extensions': [
@@ -48,7 +63,7 @@ module.exports = {
         'typescript/interface-name-prefix': 'error',
         'typescript/no-angle-bracket-type-assertion': 'error',
         'typescript/no-explicit-any': 'error',
-        'typescript/no-namespace': 'error',
+        'typescript/no-namespace': ['error', {allowDefinitionFiles: true}],
         'typescript/no-triple-slash-reference': 'error',
         'typescript/no-unused-vars': 'error',
         'typescript/prefer-namespace-keyword': 'error',

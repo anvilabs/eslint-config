@@ -1,0 +1,40 @@
+{
+  "name": "eslint-config-anvilabs-react",
+  "version": "0.0.0-development",
+  "description": "Anvilabs' ESLint config, following our internal styleguide",
+  "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
+  "repository": "anvilabs/eslint-config-anvilabs",
+  "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
+  "bugs": {
+    "url": "https://github.com/anvilabs/eslint-config-anvilabs/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ayan Yenbekbay",
+    "email": "ayan.yenb@gmail.com",
+    "url": "https://yenbekbay.me"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "find-new-rules:index": "eslint-find-rules --unused test/fixtures/index.js",
+    "find-new-rules:native":
+      "eslint-find-rules --unused test/fixtures/native.js",
+    "find-new-rules": "run-p --silent find-new-rules:*"
+  },
+  "peerDependencies": {
+    "eslint-config-anvilabs": "*",
+    "eslint": "*"
+  },
+  "dependencies": {
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-react-native": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint-find-rules": "^3.1.1",
+    "eslint": "^4.6.1"
+  }
+}

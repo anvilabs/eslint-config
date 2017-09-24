@@ -1,111 +1,54 @@
 {
   "name": "eslint-config-anvilabs",
-  "version": "0.0.0-development",
-  "description": "Anvilabs' ESLint config, following our internal styleguide",
-  "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
-  "repository": "anvilabs/eslint-config-anvilabs",
-  "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
-  "bugs": {
-    "url": "https://github.com/anvilabs/eslint-config-anvilabs/issues"
-  },
+  "private": true,
   "license": "MIT",
-  "author": {
-    "name": "Ayan Yenbekbay",
-    "email": "ayan.yenb@gmail.com",
-    "url": "http://yenbekbay.me"
-  },
   "engines": {
     "node": ">=6.0.0"
   },
-  "main": "index.js",
-  "files": [
-    "rules/*.js",
-    "babel.js",
-    "flowtype.js",
-    "index.js",
-    "jest.js",
-    "lodash.js",
-    "react-base.js",
-    "react-native.js",
-    "react.js",
-    "typescript.js"
-  ],
   "scripts": {
-    "lint": "eslint .",
+    "preinstall": "yarn run clean-yarn-cache",
+    "postinstall": "lerna bootstrap",
+    "clean-install":
+      "lerna clean; rm -rf node_modules; yarn run clean-yarn-cache",
+    "clean-yarn-cache": "rm -rf $(yarn cache dir)/*eslint-config-anvilabs*",
+    "lint": "eslint --cache .",
     "lint:fix": "eslint --cache --fix .",
-    "find-new-rules:babel":
-      "eslint-find-rules --unused ./test/fixtures/babel.js",
-    "find-new-rules:base": "eslint-find-rules --unused ./index.js",
-    "find-new-rules:flowtype":
-      "eslint-find-rules --unused ./test/fixtures/flowtype.js",
-    "find-new-rules:jest": "eslint-find-rules --unused ./test/fixtures/jest.js",
-    "find-new-rules:lodash":
-      "eslint-find-rules --unused ./test/fixtures/lodash.js",
-    "find-new-rules:react-native":
-      "eslint-find-rules --unused ./test/fixtures/react-native.js",
-    "find-new-rules:react":
-      "eslint-find-rules --unused ./test/fixtures/react.js",
-    "find-new-rules:typescript":
-      "eslint-find-rules --unused ./test/fixtures/typescript.js",
-    "find-new-rules": "run-p --silent find-new-rules:*",
+    "find-new-rules": "lerna run find-new-rules -- --silent",
     "prettier-check":
-      "eslint --print-config index.js | eslint-config-prettier-check",
+      "eslint --print-config packages/eslint-config-anvilabs/index.js | eslint-config-prettier-check",
     "jest": "jest",
     "test": "run-p --silent lint find-new-rules prettier-check jest",
     "precommit": "lint-staged",
-    "commitmsg": "validate-commit-msg",
+    "commitmsg": "commitlint -e",
     "prepush": "yarn test",
     "semantic-release":
-      "semantic-release pre && npm publish && semantic-release post"
+      "semantic-release pre && node scripts/publish.js && semantic-release post",
+    "outdated":
+      "for P in $(ls packages); do echo '\\n' === $P ===; cd \"packages/$P/\"; yarn outdated; cd ../..; done"
   },
   "lint-staged": {
-    "{*.js,{rules,test}/**/*.js}": ["eslint --cache --fix", "git add"],
-    "{*.json,.vscode/*.json}": ["prettier --write", "git add"]
+    "{*.js,scripts/*.js,packages/*/{*.js,{rules,test}/*.js}": [
+      "eslint --cache --fix",
+      "git add"
+    ],
+    "{*.json,.vscode/*.json,packages/*/*.json}": ["prettier --write", "git add"]
   },
   "jest": {
-    "roots": ["<rootDir>/rules"],
+    "roots": ["<rootDir>/packages/eslint-config-anvilabs/rules/"],
     "testEnvironment": "node",
     "testRegex": "/__tests__/.+-test\\.js$"
   },
-  "config": {
-    "validate-commit-msg": {
-      "maxSubjectLength": 72,
-      "types": "conventional-commit-types"
-    }
-  },
-  "peerDependencies": {
-    "eslint": "^4.6.0",
-    "prettier": "^1.6.0"
-  },
-  "dependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint-config-airbnb-base": "^12.0.0",
-    "eslint-config-prettier": "^2.4.0",
-    "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-eslint-comments": "^1.0.3",
-    "eslint-plugin-flowtype": "^2.35.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^21.0.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-lodash-fp": "^2.1.3",
-    "eslint-plugin-no-use-extend-native": "^0.3.12",
-    "eslint-plugin-prettier": "^2.2.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.3.0",
-    "eslint-plugin-react-native": "^3.1.0",
-    "eslint-plugin-typescript": "^0.7.0",
-    "eslint-plugin-unicorn": "^2.1.1",
-    "typescript-eslint-parser": "^8.0.0"
-  },
   "devDependencies": {
+    "@commitlint/cli": "^3.2.0",
+    "@commitlint/config-angular": "^3.1.1",
     "eslint": "^4.6.1",
-    "eslint-find-rules": "^3.1.1",
+    "eslint-config-anvilabs": "file:./packages/eslint-config-anvilabs",
     "husky": "^0.14.3",
     "jest": "^21.0.1",
+    "lerna": "^2.2.0",
     "lint-staged": "^4.1.1",
     "npm-run-all": "^4.1.1",
     "prettier": "^1.6.1",
-    "semantic-release": "^7.0.2",
-    "validate-commit-msg": "^2.14.0"
+    "semantic-release": "^7.0.2"
   }
 }

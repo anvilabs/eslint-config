@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-anvilabs-typescript",
+  "version": "0.0.0-development",
+  "description": "Anvilabs' ESLint config, following our internal styleguide",
+  "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
+  "repository": "anvilabs/eslint-config-anvilabs",
+  "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
+  "bugs": {
+    "url": "https://github.com/anvilabs/eslint-config-anvilabs/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ayan Yenbekbay",
+    "email": "ayan.yenb@gmail.com",
+    "url": "https://yenbekbay.me"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "find-new-rules": "eslint-find-rules --unused test/fixtures/index.js"
+  },
+  "peerDependencies": {
+    "eslint-config-anvilabs": "*",
+    "eslint": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "eslint-plugin-typescript": "^0.7.0",
+    "typescript-eslint-parser": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint-find-rules": "^3.1.1",
+    "eslint": "^4.6.1"
+  }
+}

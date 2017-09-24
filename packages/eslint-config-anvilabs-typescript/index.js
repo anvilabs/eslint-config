@@ -1,4 +1,5 @@
 module.exports = {
+  extends: ['anvilabs'],
   plugins: ['typescript'],
   parser: 'typescript-eslint-parser',
   settings: {

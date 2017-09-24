@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./react-base.js'],
+  extends: ['./base.js'],
   plugins: ['react-native'],
   globals: {
     __DEV__: false,

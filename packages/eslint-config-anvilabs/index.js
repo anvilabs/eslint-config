@@ -1,16 +1,23 @@
-const Plugins = require('eslint/lib/config/plugins');
+const Module = require('module');
 
-// monkey patch ESLint to include local rules
-const originalLoadAll = Plugins.prototype.loadAll;
-Plugins.prototype.loadAll = function loadAll(...args) {
-  this.define('local', require('./rules')); // eslint-disable-line global-require
-  originalLoadAll.apply(this, args);
-};
+// monkey patch Node module system to include local rules
+/* eslint-disable no-underscore-dangle */
+Module._resolveFilename = (original =>
+  function getResolveFilename(...args) {
+    const request = args[0];
+    if (request === 'eslint-plugin-local') {
+      return require.resolve('./rules');
+    }
+
+    return original.apply(this, args);
+  })(Module._resolveFilename);
+/* eslint-enable no-underscore-dangle */
 
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: [
     'eslint-comments',
+    'local',
     'no-use-extend-native',
     'prettier',
     'promise',

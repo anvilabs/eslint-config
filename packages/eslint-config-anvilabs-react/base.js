@@ -36,6 +36,7 @@ module.exports = {
     'react/forbid-foreign-prop-types': 'off',
     'react/forbid-prop-types': ['error', {forbid: ['any', 'array', 'object']}],
     'react/jsx-boolean-value': ['error', 'never'],
+    'react/jsx-curly-brace-presence': ['error', 'never'],
     'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
     'react/jsx-handler-names': [
       'off',

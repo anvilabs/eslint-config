@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-anvilabs-react",
   "version": "0.0.0-development",
-  "description": "Anvilabs' ESLint config, following our internal styleguide",
+  "description": "Anvilabs' ESLint config for our React/React Native apps",
   "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
   "repository": "anvilabs/eslint-config-anvilabs",
   "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",

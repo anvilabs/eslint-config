@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/eslint-config-anvilabs-typescript.svg)](http://npm.im/eslint-config-anvilabs-typescript)
 [![Dependency Status](https://david-dm.org/anvilabs/eslint-config-anvilabs/status.svg?path=packages/eslint-config-anvilabs-typescript)](https://david-dm.org/anvilabs/eslint-config-anvilabs?path=packages/eslint-config-anvilabs-typescript)
-[![devDependency Status](https://david-dm.org/anvilabs/eslint-config-anvilabs/status.svg?path=packages/eslint-config-anvilabs-typescript&type=dev)](https://david-dm.org/anvilabs/eslint-config-anvilabs?path=packages/eslint-config-anvilabs-typescript&type=dev)
+[![devDependency Status](https://david-dm.org/anvilabs/eslint-config-anvilabs/dev-status.svg?path=packages/eslint-config-anvilabs-typescript)](https://david-dm.org/anvilabs/eslint-config-anvilabs?path=packages/eslint-config-anvilabs-typescript&type=dev)
 
 Anvilabs' ESLint config for our Typescript codebases.
 

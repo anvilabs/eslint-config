@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/eslint-config-anvilabs.svg)](http://npm.im/eslint-config-anvilabs)
 [![Dependency Status](https://david-dm.org/anvilabs/eslint-config-anvilabs/status.svg?path=packages/eslint-config-anvilabs)](https://david-dm.org/anvilabs/eslint-config-anvilabs?path=packages/eslint-config-anvilabs)
-[![devDependency Status](https://david-dm.org/anvilabs/eslint-config-anvilabs/status.svg?path=packages/eslint-config-anvilabs&type=dev)](https://david-dm.org/anvilabs/eslint-config-anvilabs?path=packages/eslint-config-anvilabs&type=dev)
+[![devDependency Status](https://david-dm.org/anvilabs/eslint-config-anvilabs/dev-status.svg?path=packages/eslint-config-anvilabs)](https://david-dm.org/anvilabs/eslint-config-anvilabs?path=packages/eslint-config-anvilabs&type=dev)
 
 Anvilabs' base ESLint config. Makes use of [prettier](https://github.com/jlongster/prettier) for formatting.
 

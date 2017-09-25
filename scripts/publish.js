@@ -23,12 +23,7 @@ const syncVersion = () => {
   const pkgDirPaths = fs
     .readdirSync(pkgDirsPath)
     .map(name => path.join(pkgDirsPath, name))
-    .filter(isDirectory)
-    .filter(
-      pkgDirPath =>
-        !pkgDirPath.endsWith('eslint-config-anvilabs') &&
-        !pkgDirPath.endsWith('eslint-config-anvilabs/')
-    );
+    .filter(isDirectory);
 
   pkgDirPaths.forEach(pkgDirPath => {
     const pkgPath = path.join(pkgDirPath, './package.json');

@@ -5,7 +5,8 @@ const path = require('path');
 const rootPkg = require('../package.json');
 
 const isDirectory = source => fs.lstatSync(source).isDirectory();
-const pkgDirsPath = path.join(__dirname, '../packages');
+const pkgDirsPath = path.resolve(__dirname, '../packages');
+const rootPath = path.resolve(__dirname, '..');
 
 const syncVersion = () => {
   /* eslint-disable no-console, unicorn/no-process-exit */
@@ -43,6 +44,15 @@ const syncVersion = () => {
 
     console.log(`Wrote version ${version} to ${pkgPath}`);
 
+    spawnSync(
+      'cp',
+      [
+        '-r',
+        path.resolve(rootPath, './.git'),
+        path.resolve(pkgDirPath, './.git'),
+      ],
+      {stdio: 'inherit'}
+    );
     spawnSync('npm', ['publish', pkgDirPath], {stdio: 'inherit'});
   });
   /* eslint-enable no-console, unicorn/no-process-exit */

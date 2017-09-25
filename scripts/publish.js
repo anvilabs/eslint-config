@@ -10,7 +10,7 @@ const pkgDirsPath = path.join(__dirname, '../packages');
 const syncVersion = () => {
   /* eslint-disable no-console, unicorn/no-process-exit */
   if (!('CI' in process.env)) {
-    console.error('This script must be run on CI');
+    console.error('This script must be run on Travis CI');
     process.exit(1);
   }
 
@@ -43,8 +43,7 @@ const syncVersion = () => {
 
     console.log(`Wrote version ${version} to ${pkgPath}`);
 
-    process.chdir(pkgDirPath);
-    spawnSync('npm', ['publish'], {stdio: 'inherit'});
+    spawnSync('npm', ['publish', pkgDirPath], {stdio: 'inherit'});
   });
   /* eslint-enable no-console, unicorn/no-process-exit */
 };

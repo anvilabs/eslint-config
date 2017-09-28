@@ -22,8 +22,8 @@
     "find-new-rules": "eslint-find-rules --unused test/fixtures/index.js"
   },
   "peerDependencies": {
-    "eslint-config-anvilabs": "*",
     "eslint": "*",
+    "eslint-config-anvilabs": "*",
     "typescript": "*"
   },
   "dependencies": {
@@ -31,7 +31,7 @@
     "typescript-eslint-parser": "^8.0.0"
   },
   "devDependencies": {
-    "eslint-find-rules": "^3.1.1",
-    "eslint": "^4.6.1"
+    "eslint": "^4.7.2",
+    "eslint-find-rules": "^3.1.1"
   }
 }

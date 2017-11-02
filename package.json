@@ -7,13 +7,16 @@
     "node": ">=6.0.0"
   },
   "scripts": {
+    "format": "prettier --write",
     "preinstall": "yarn run clean-yarn-cache",
     "postinstall": "lerna bootstrap",
     "clean-install":
       "lerna clean; rm -rf node_modules; yarn run clean-yarn-cache",
     "clean-yarn-cache": "rm -rf $(yarn cache dir)/*eslint-config-anvilabs*",
-    "lint": "eslint --cache .",
-    "lint:fix": "eslint --cache --fix .",
+    "lint": "eslint --cache",
+    "lint-project": "yarn run lint .",
+    "lint-fix": "yarn run lint --fix",
+    "lint-fix-project": "yarn run lint-fix .",
     "find-new-rules": "lerna run find-new-rules -- --silent",
     "prettier-check":
       "eslint --print-config packages/eslint-config-anvilabs/index.js | eslint-config-prettier-check",
@@ -29,10 +32,10 @@
   },
   "lint-staged": {
     "{*.js,scripts/*.js,packages/*/{*.js,{rules,test}/*.js}": [
-      "eslint --cache --fix",
+      "yarn run lint-fix",
       "git add"
     ],
-    "{*.json,.vscode/*.json,packages/*/*.json}": ["prettier --write", "git add"]
+    "{*.json,.vscode/*.json,packages/*/*.json}": ["yarn run format", "git add"]
   },
   "jest": {
     "roots": ["<rootDir>/packages/eslint-config-anvilabs/rules/"],
@@ -51,5 +54,6 @@
     "npm-run-all": "^4.1.1",
     "prettier": "^1.6.1",
     "semantic-release": "^7.0.2"
-  }
+  },
+  "dependencies": {}
 }

@@ -21,7 +21,7 @@
     "prettier-check":
       "eslint --print-config packages/eslint-config-anvilabs/index.js | eslint-config-prettier-check",
     "jest": "jest",
-    "test": "run-p --silent lint find-new-rules prettier-check jest",
+    "test": "run-p --silent lint-project find-new-rules prettier-check jest",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
     "prepush": "yarn test",

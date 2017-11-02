@@ -86,7 +86,7 @@ module.exports = {
     'react/prefer-es6-class': ['error', 'always'],
     'react/prefer-stateless-function': 'error',
     'react/prop-types': [
-      'error',
+      'off',
       {ignore: [], customValidators: [], skipUndeclared: false},
     ],
     'react/react-in-jsx-scope': 'error',

@@ -1,7 +1,3 @@
-const exportsLast = require('./exportsLast');
-
-const rules = {
-  'exports-last': exportsLast,
-};
+const rules = {};
 
 module.exports = {rules};

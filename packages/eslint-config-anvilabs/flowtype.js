@@ -8,12 +8,15 @@ module.exports = {
     },
   },
   rules: {
+    'no-unused-expressions': 'off', // disabled in favor of `flowtype/no-unused-expressions`
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/boolean-style': ['error', 'boolean'],
     'flowtype/define-flow-type': 'error',
     'flowtype/no-dupe-keys': 'error',
+    'flowtype/no-mutable-array': 'error',
     'flowtype/no-primitive-constructor-types': 'error',
     'flowtype/no-types-missing-file-annotation': 'error',
+    'flowtype/no-unused-expressions': 'error',
     'flowtype/no-weak-types': [
       'error',
       {

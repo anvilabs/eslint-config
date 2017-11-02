@@ -24,8 +24,6 @@ module.exports = {
     'unicorn',
   ],
   rules: {
-    // local rules
-    'local/exports-last': 'error',
     // http://eslint.org/docs/rules
     complexity: ['error', {max: 11}],
     'max-depth': ['error', {max: 4}],
@@ -51,9 +49,11 @@ module.exports = {
     // https://github.com/mysticatea/eslint-plugin-eslint-comments
     'eslint-comments/disable-enable-pair': 'error',
     'eslint-comments/no-duplicate-disable': 'error',
+    'eslint-comments/no-restricted-disable': 'off',
     'eslint-comments/no-unlimited-disable': 'error',
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
+    'eslint-comments/no-aggregating-enable': 'error',
     'eslint-comments/no-use': [
       'error',
       {
@@ -66,6 +66,7 @@ module.exports = {
       },
     ],
     // https://github.com/benmosher/eslint-plugin-import
+    'import/exports-last': 'error',
     'import/no-anonymous-default-export': 'error',
     'import/order': [
       'error',
@@ -105,6 +106,7 @@ module.exports = {
     'promise/no-native': 'off',
     'promise/no-nesting': 'error',
     'promise/no-promise-in-callback': 'error',
+    'promise/no-return-in-finally': 'error',
     'promise/no-return-wrap': 'error',
     'promise/param-names': 'error',
     'promise/prefer-await-to-callbacks': 'off',

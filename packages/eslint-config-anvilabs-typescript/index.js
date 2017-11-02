@@ -10,8 +10,11 @@ module.exports = {
     'import/extensions': ['.js', '.ts'],
   },
   rules: {
+    camelcase: 'off',
+    'no-restricted-globals': 'off', // conflicts with typescript, @see https://github.com/eslint/typescript-eslint-parser/issues/350
     'no-undef': 'off', // conflicts with typescript
-    'no-unused-vars': 'off', // conflicts with typescript
+    'no-unused-vars': 'off', // disable in favor of `typescript/no-unused-vars`
+    'no-use-before-define': 'off', // disable in favor of `typescript/no-use-before-define`
     'no-useless-constructor': 'off', // conflicts with typescript
     'spaced-comment': [
       'error',
@@ -64,7 +67,7 @@ module.exports = {
     'typescript/member-ordering': 'error',
     'typescript/no-angle-bracket-type-assertion': 'error',
     'typescript/no-empty-interface': 'error',
-    'typescript/no-explicit-any': 'error',
+    'typescript/no-explicit-any': 'off',
     'typescript/no-namespace': ['error', {allowDefinitionFiles: true}],
     'typescript/no-parameter-properties': 'off',
     'typescript/no-triple-slash-reference': 'error',

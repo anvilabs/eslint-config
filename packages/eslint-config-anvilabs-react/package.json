@@ -34,7 +34,8 @@
     "eslint-plugin-react-native": "^3.1.0"
   },
   "devDependencies": {
-    "eslint": "^4.7.2",
-    "eslint-find-rules": "^3.1.1"
+    "eslint": "^4.10.0",
+    "eslint-find-rules": "^3.1.1",
+    "npm-run-all": "^4.1.1"
   }
 }

@@ -46,7 +46,7 @@ module.exports = {
       {eventHandlerPrefix: 'handle', eventHandlerPropPrefix: 'on'},
     ],
     'react/jsx-key': 'error',
-    // todo: disable `ignoreRefs` and`allowArrowFunctions` options
+    // TODO: disable `ignoreRefs` and`allowArrowFunctions` options
     'react/jsx-no-bind': [
       'error',
       {ignoreRefs: true, allowArrowFunctions: true, allowBind: false},

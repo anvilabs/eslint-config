@@ -8,7 +8,7 @@ Anvilabs' ESLint config for our React/React Native apps.
 
 ## Usage
 
-This config relies dangerously on npm@3/yarn flatter tree for its dependencies (because of [eslint/issues/3458](https://github.com/eslint/eslint/issues/3458)), so installation may be as simple as:
+This config relies dangerously on npm@3/yarn flatter tree for its dependencies (because of [eslint/issues/3458](https://github.com/eslint/eslint/issues/3458)), so installation may be as simple as: 
 
 ```bash
 $ yarn add eslint prettier eslint-config-anvilabs eslint-config-anvilabs-react --dev
@@ -26,6 +26,10 @@ module.exports = {
   },
 };
 ```
+
+Additional configs include:
+
+- `'anvilabs-typescript/babel-react-require'` for the import plugin to work with [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 
 ## License
 

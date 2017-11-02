@@ -13,8 +13,8 @@ module.exports = {
     camelcase: 'off',
     'no-restricted-globals': 'off', // conflicts with typescript, @see https://github.com/eslint/typescript-eslint-parser/issues/350
     'no-undef': 'off', // conflicts with typescript
-    'no-unused-vars': 'off', // disable in favor of `typescript/no-unused-vars`
-    'no-use-before-define': 'off', // disable in favor of `typescript/no-use-before-define`
+    'no-unused-vars': 'off', // disabled in favor of `typescript/no-unused-vars`
+    'no-use-before-define': 'off', // disabled in favor of `typescript/no-use-before-define`
     'no-useless-constructor': 'off', // conflicts with typescript
     'spaced-comment': [
       'error',

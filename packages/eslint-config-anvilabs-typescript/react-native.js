@@ -1,15 +1,4 @@
 module.exports = {
-  extends: ['./base.js'],
-  plugins: ['react-native'],
-  globals: {
-    __DEV__: false,
-    cancelAnimationFrame: false,
-    cancelIdleCallback: false,
-    fetch: false,
-    navigator: false,
-    requestAnimationFrame: false,
-    requestIdleCallback: false,
-  },
   settings: {
     'import/resolver': {
       node: {
@@ -20,14 +9,19 @@ module.exports = {
           '.ios.jsx',
           '.android.js',
           '.android.jsx',
+          '.ts',
+          '.tsx',
+          '.ios.ts',
+          '.ios.tsx',
+          '.android.ts',
+          '.android.tsx',
           '.json',
         ],
       },
     },
+    'import/extensions': ['.js', 'jsx', '.ts', '.tsx'],
   },
   rules: {
-    'global-require': 'off',
-    'no-console': 'off',
     // https://github.com/benmosher/eslint-plugin-import
     'import/extensions': [
       'error',
@@ -39,12 +33,13 @@ module.exports = {
         'ios.jsx': 'never',
         'android.js': 'never',
         'android.jsx': 'never',
+        ts: 'never',
+        tsx: 'never',
+        'ios.ts': 'never',
+        'ios.tsx': 'never',
+        'android.ts': 'never',
+        'android.tsx': 'never',
       },
     ],
-    // https://github.com/Intellicode/eslint-plugin-react-native
-    'react-native/no-color-literals': 'error',
-    'react-native/no-inline-styles': 'error',
-    'react-native/no-unused-styles': 'error',
-    'react-native/split-platform-components': 'error',
   },
 };

@@ -66,6 +66,7 @@ module.exports = {
 Available configs include:
 
 - `'anvilabs/babel'` for usage with [babel transformations](https://github.com/babel/babel-eslint)
+- `'anvilabs/babel-module'` for usage with [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver). Make sure to apply as the last config in the `extends` clause if you use it
 - `'anvilabs/flowtype'` for [Flow](https://flowtype.org/) related rules
 - `'anvilabs/jest'` for [Jest](https://facebook.github.io/jest/) related rules
 - `'anvilabs/lodash'` for [Lodash](https://lodash.com/) related rules

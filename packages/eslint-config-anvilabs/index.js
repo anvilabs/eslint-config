@@ -115,7 +115,7 @@ module.exports = {
     'unicorn/escape-case': 'error',
     'unicorn/explicit-length-check': 'error',
     'unicorn/filename-case': 'off',
-    'unicorn/no-abusive-eslint-disable': 'off', // in favor of `eslint-comments/no-unlimited-disable`
+    'unicorn/no-abusive-eslint-disable': 'off', // disabled in favor of `eslint-comments/no-unlimited-disable`
     'unicorn/no-array-instanceof': 'error',
     'unicorn/no-hex-escape': 'error',
     'unicorn/no-new-buffer': 'error',

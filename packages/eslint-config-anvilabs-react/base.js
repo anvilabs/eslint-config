@@ -6,6 +6,9 @@ module.exports = {
       jsx: true,
     },
   },
+  settings: {
+    'import/extensions': ['.js', 'jsx'],
+  },
   rules: {
     'class-methods-use-this': [
       'error',
@@ -37,7 +40,7 @@ module.exports = {
     'react/forbid-prop-types': ['error', {forbid: ['any', 'array', 'object']}],
     'react/jsx-boolean-value': ['error', 'never'],
     'react/jsx-curly-brace-presence': ['error', 'never'],
-    'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
+    'react/jsx-filename-extension': ['error', {extensions: ['.jsx']}],
     'react/jsx-handler-names': [
       'off',
       {eventHandlerPrefix: 'handle', eventHandlerPropPrefix: 'on'},

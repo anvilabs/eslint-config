@@ -1,19 +1,13 @@
 module.exports = {
-  extends: ['./base.js', 'plugin:jsx-a11y/recommended'],
-  plugins: ['jsx-a11y'],
-  env: {
-    browser: true,
-  },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.json'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       },
     },
+    'import/extensions': ['.js', 'jsx', '.ts', '.tsx'],
   },
   rules: {
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y
-    'jsx-a11y/lang': 'error',
     // https://github.com/benmosher/eslint-plugin-import
     'import/extensions': [
       'error',
@@ -21,6 +15,8 @@ module.exports = {
       {
         js: 'never',
         jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
       },
     ],
   },

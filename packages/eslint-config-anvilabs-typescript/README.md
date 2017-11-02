@@ -8,7 +8,7 @@ Anvilabs' ESLint config for our Typescript codebases.
 
 ## Usage
 
-This config relies dangerously on npm@3/yarn flatter tree for its dependencies (because of [eslint/issues/3458](https://github.com/eslint/eslint/issues/3458)), so installation may be as simple as:
+This config relies dangerously on npm@3/yarn flatter tree for its dependencies (because of [eslint/issues/3458](https://github.com/eslint/eslint/issues/3458)), so installation may be as simple as: 
 
 ```bash
 $ yarn add eslint prettier eslint-config-anvilabs eslint-config-anvilabs-typescript --dev
@@ -20,12 +20,17 @@ Then add the extends to your `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: ['anvilabs', 'anvilabs-typescript'],
+  extends: ['anvilabs', 'anvilabs-typescript' /* and maybe 'anvilabs-typescript/react' or 'anvilabs-typescript/react-native' */],
   rules: {
     // your overrides
   },
 };
 ```
+
+Additional configs include:
+
+- `'anvilabs-typescript/react'` for usage with [React](https://reactjs.org/)
+- `'anvilabs-typescript/react-native'` for usage with [React Native](https://facebook.github.io/react-native/)
 
 ## License
 

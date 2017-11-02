@@ -26,7 +26,6 @@ module.exports = {
     },
   },
   rules: {
-    'global-require': 'off',
     'no-console': 'off',
     // https://github.com/benmosher/eslint-plugin-import
     'import/extensions': [

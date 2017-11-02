@@ -19,5 +19,7 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    // https://github.com/yannickcr/eslint-plugin-react
+    'react/jsx-filename-extension': ['error', {extensions: ['.tsx']}],
   },
 };

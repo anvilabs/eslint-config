@@ -2,7 +2,17 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+        extensions: [
+          '.js',
+          '.jsx',
+          '.web.js',
+          '.web.jsx',
+          '.ts',
+          '.tsx',
+          '.web.ts',
+          '.web.tsx',
+          '.json',
+        ],
       },
     },
     'import/extensions': ['.js', 'jsx', '.ts', '.tsx'],
@@ -15,8 +25,12 @@ module.exports = {
       {
         js: 'never',
         jsx: 'never',
+        'web.js': 'never',
+        'web.jsx': 'never',
         ts: 'never',
         tsx: 'never',
+        'web.ts': 'never',
+        'web.tsx': 'never',
       },
     ],
     // https://github.com/yannickcr/eslint-plugin-react

@@ -20,6 +20,8 @@ module.exports = {
           '.ios.jsx',
           '.android.js',
           '.android.jsx',
+          '.native.js',
+          '.native.jsx',
           '.json',
         ],
       },
@@ -38,6 +40,8 @@ module.exports = {
         'ios.jsx': 'never',
         'android.js': 'never',
         'android.jsx': 'never',
+        'native.js': 'never',
+        'native.jsx': 'never',
       },
     ],
     // https://github.com/Intellicode/eslint-plugin-react-native

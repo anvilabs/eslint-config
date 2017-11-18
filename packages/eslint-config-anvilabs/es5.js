@@ -1,4 +1,4 @@
-const baseConfig = require('./');
+const baseConfig = require('.');
 
 module.exports = {
   rules: {

@@ -115,16 +115,21 @@ module.exports = {
     'unicorn/catch-error-name': 'off',
     'unicorn/custom-error-definition': 'off',
     'unicorn/escape-case': 'error',
-    'unicorn/explicit-length-check': 'error',
+    'unicorn/explicit-length-check': ['error', {'non-zero': 'not-equal'}],
     'unicorn/filename-case': 'off',
+    'unicorn/import-index': 'error',
+    'unicorn/new-for-builtins': 'error',
     'unicorn/no-abusive-eslint-disable': 'off', // disabled in favor of `eslint-comments/no-unlimited-disable`
     'unicorn/no-array-instanceof': 'error',
+    // TODO: consider enabling?
+    'unicorn/no-fn-reference-in-iterator': 'off',
     'unicorn/no-hex-escape': 'error',
     'unicorn/no-new-buffer': 'error',
     'unicorn/no-process-exit': 'error',
     'unicorn/number-literal-case': 'off', // conflicts with prettier
     'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/prefer-type-error': 'off',
+    'unicorn/regex-shorthand': 'error',
     'unicorn/throw-new-error': 'error',
   },
 };

@@ -26,6 +26,7 @@ module.exports = {
   rules: {
     // http://eslint.org/docs/rules
     complexity: ['error', {max: 11}],
+    'implicit-arrow-linebreak': 'off',
     'max-depth': ['error', {max: 4}],
     'max-nested-callbacks': ['error', {max: 3}],
     'max-params': ['error', {max: 3}],

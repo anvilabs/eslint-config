@@ -32,7 +32,9 @@ module.exports = {
     'no-unused-expressions': ['error', {allowShortCircuit: true}],
     // https://github.com/yannickcr/eslint-plugin-react
     'react/boolean-prop-naming': 'off',
+    'react/button-has-type': 'error',
     'react/default-props-match-prop-types': 'error',
+    'react/destructuring-assignment': 'off', // TODO: decide on what option to use
     'react/display-name': 'error',
     'react/forbid-component-props': 'off',
     'react/forbid-elements': 'off',
@@ -56,11 +58,13 @@ module.exports = {
     'react/jsx-no-literals': 'off',
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
+    'react/jsx-one-expression-per-line': 'error',
     'react/jsx-pascal-case': ['error', {allowAllCaps: true, ignore: []}],
     'react/jsx-sort-prop-types': 'off', // deprecated in favor of react/jsx-sort-props
     'react/jsx-sort-props': 'off',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
+    'react/no-access-state-in-setstate': 'error',
     'react/no-array-index-key': 'error',
     'react/no-children-prop': 'error',
     'react/no-comment-textnodes': 'off', // deprecated in favor of react/jsx-no-comment-textnodes
@@ -90,7 +94,7 @@ module.exports = {
       {ignore: [], customValidators: [], skipUndeclared: false},
     ],
     'react/react-in-jsx-scope': 'error',
-    'react/require-default-props': 'error',
+    'react/require-default-props': ['error', {forbidDefaultForRequired: true}],
     'react/require-extension': 'off', // deprecated in favor of import/extensions
     'react/require-optimization': 'off',
     'react/require-render-return': 'error',
@@ -111,7 +115,7 @@ module.exports = {
         ],
       },
     ],
-    'react/sort-prop-types': 'off',
+    'react/sort-prop-types': 'off', // we don't use prop-types
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
   },

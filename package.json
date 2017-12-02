@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-anvilabs",
+  "name": "@anvilabs/eslint-config",
   "private": true,
-  "repository": "anvilabs/eslint-config-anvilabs",
+  "repository": "anvilabs/eslint-config",
   "license": "MIT",
   "engines": {
     "node": ">=6.0.0"
@@ -12,14 +12,14 @@
     "postinstall": "lerna bootstrap",
     "clean-install":
       "lerna clean; rm -rf node_modules; yarn run clean-yarn-cache",
-    "clean-yarn-cache": "rm -rf $(yarn cache dir)/*eslint-config-anvilabs*",
+    "clean-yarn-cache": "rm -rf $(yarn cache dir)/*eslint-config*",
     "lint": "eslint --cache",
     "lint-project": "yarn run lint .",
     "lint-fix": "yarn run lint --fix",
     "lint-fix-project": "yarn run lint-fix .",
     "find-new-rules": "lerna run find-new-rules -- --silent",
     "prettier-check":
-      "eslint --print-config packages/eslint-config-anvilabs/index.js | eslint-config-prettier-check",
+      "eslint --print-config packages/eslint-config/index.js | eslint-config-prettier-check",
     "jest": "jest",
     "test": "run-p --silent lint-project find-new-rules prettier-check jest",
     "precommit": "lint-staged",
@@ -38,15 +38,15 @@
     "{*.json,.vscode/*.json,packages/*/*.json}": ["yarn run format", "git add"]
   },
   "jest": {
-    "roots": ["<rootDir>/packages/eslint-config-anvilabs/rules/"],
+    "roots": ["<rootDir>/packages/eslint-config/rules/"],
     "testEnvironment": "node",
     "testRegex": "/__tests__/.+-test\\.js$"
   },
   "devDependencies": {
+    "@anvilabs/eslint-config": "file:./packages/eslint-config",
     "@commitlint/cli": "^4.3.0",
     "@commitlint/config-angular": "^4.3.0",
     "eslint": "^4.11.0",
-    "eslint-config-anvilabs": "file:./packages/eslint-config-anvilabs",
     "husky": "^0.14.3",
     "jest": "^21.0.1",
     "lerna": "^2.5.1",

@@ -1,12 +1,12 @@
 {
-  "name": "eslint-config-anvilabs",
+  "name": "@anvilabs/eslint-config",
   "version": "0.0.0-development",
   "description": "Anvilabs' base ESLint config",
   "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
-  "repository": "anvilabs/eslint-config-anvilabs",
-  "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
+  "repository": "anvilabs/eslint-config",
+  "homepage": "https://github.com/anvilabs/eslint-config#readme",
   "bugs": {
-    "url": "https://github.com/anvilabs/eslint-config-anvilabs/issues"
+    "url": "https://github.com/anvilabs/eslint-config/issues"
   },
   "license": "MIT",
   "author": {

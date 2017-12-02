@@ -1,12 +1,12 @@
 {
-  "name": "eslint-config-anvilabs-typescript",
+  "name": "@anvilabs/eslint-config-typescript",
   "version": "0.0.0-development",
   "description": "Anvilabs' ESLint config for our Typescript codebases",
   "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
-  "repository": "anvilabs/eslint-config-anvilabs",
-  "homepage": "https://github.com/anvilabs/eslint-config-anvilabs#readme",
+  "repository": "anvilabs/eslint-config",
+  "homepage": "https://github.com/anvilabs/eslint-config#readme",
   "bugs": {
-    "url": "https://github.com/anvilabs/eslint-config-anvilabs/issues"
+    "url": "https://github.com/anvilabs/eslint-config/issues"
   },
   "license": "MIT",
   "author": {
@@ -26,8 +26,8 @@
     "find-new-rules": "run-p --silent find-new-rules:*"
   },
   "peerDependencies": {
+    "@anvilabs/eslint-config": "*",
     "eslint": "*",
-    "eslint-config-anvilabs": "*",
     "typescript": "*"
   },
   "dependencies": {

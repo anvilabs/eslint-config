@@ -121,8 +121,7 @@ module.exports = {
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-abusive-eslint-disable': 'off', // disabled in favor of `eslint-comments/no-unlimited-disable`
     'unicorn/no-array-instanceof': 'error',
-    // TODO: consider enabling?
-    'unicorn/no-fn-reference-in-iterator': 'off',
+    'unicorn/no-fn-reference-in-iterator': 'off', // TODO: consider enabling?
     'unicorn/no-hex-escape': 'error',
     'unicorn/no-new-buffer': 'error',
     'unicorn/no-process-exit': 'error',

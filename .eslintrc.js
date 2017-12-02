@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['anvilabs', 'anvilabs/es5'],
+  extends: ['@anvilabs/eslint-config', '@anvilabs/eslint-config/es5'],
 };

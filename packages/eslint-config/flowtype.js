@@ -13,6 +13,7 @@ module.exports = {
     'flowtype/boolean-style': ['error', 'boolean'],
     'flowtype/define-flow-type': 'error',
     'flowtype/no-dupe-keys': 'error',
+    'flowtype/no-flow-fix-me-comments': 'off',
     'flowtype/no-mutable-array': 'error',
     'flowtype/no-primitive-constructor-types': 'error',
     'flowtype/no-types-missing-file-annotation': 'error',

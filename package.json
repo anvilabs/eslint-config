@@ -20,7 +20,7 @@
     "find-new-rules": "lerna run find-new-rules -- --silent",
     "prettier-check":
       "eslint --print-config packages/eslint-config/index.js | eslint-config-prettier-check",
-    "jest": "jest",
+    "jest": "jest --passWithNoTests",
     "test": "run-p --silent lint-project find-new-rules prettier-check jest",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",

@@ -25,6 +25,10 @@ module.exports = {
   ],
   rules: {
     // http://eslint.org/docs/rules
+    'no-warning-comments': [
+      'warn',
+      {terms: ['todo', 'fixme'], location: 'start'},
+    ],
     'implicit-arrow-linebreak': 'off',
     'max-depth': ['error', {max: 4}],
     'max-nested-callbacks': ['error', {max: 3}],

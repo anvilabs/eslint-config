@@ -46,7 +46,7 @@
     "@anvilabs/eslint-config": "file:./packages/eslint-config",
     "@commitlint/cli": "^5.2.8",
     "@commitlint/config-conventional": "^5.2.3",
-    "eslint": "^4.12.1",
+    "eslint": "^4.15.0",
     "husky": "^0.14.3",
     "jest": "^22.0.4",
     "lerna": "^2.6.0",

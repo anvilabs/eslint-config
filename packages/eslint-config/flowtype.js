@@ -26,6 +26,7 @@ module.exports = {
         Function: true,
       },
     ],
+    'flowtype/require-exact-type': 'off',
     'flowtype/require-parameter-type': 'off',
     'flowtype/require-return-type': 'off',
     'flowtype/require-valid-file-annotation': [

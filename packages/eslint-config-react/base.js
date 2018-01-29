@@ -37,10 +37,12 @@ module.exports = {
     'react/destructuring-assignment': 'off', // TODO: decide on what option to use
     'react/display-name': 'error',
     'react/forbid-component-props': 'off',
+    'react/forbid-dom-props': 'off',
     'react/forbid-elements': 'off',
     'react/forbid-foreign-prop-types': 'off',
     'react/forbid-prop-types': ['error', {forbid: ['any', 'array', 'object']}],
     'react/jsx-boolean-value': ['error', 'never'],
+    'react/jsx-child-element-spacing': 'off', // TODO: remove once `eslint-config-prettier` adds this
     'react/jsx-curly-brace-presence': ['error', 'never'],
     'react/jsx-filename-extension': ['error', {extensions: ['.jsx']}],
     'react/jsx-handler-names': [
@@ -60,6 +62,7 @@ module.exports = {
     'react/jsx-no-undef': 'error',
     'react/jsx-one-expression-per-line': 'error',
     'react/jsx-pascal-case': ['error', {allowAllCaps: true, ignore: []}],
+    'react/jsx-sort-default-props': 'off',
     'react/jsx-sort-prop-types': 'off', // deprecated in favor of react/jsx-sort-props
     'react/jsx-sort-props': 'off',
     'react/jsx-uses-react': 'error',
@@ -81,6 +84,7 @@ module.exports = {
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
     'react/no-string-refs': 'error',
+    'react/no-this-in-sfc': 'error',
     'react/no-typos': 'error',
     'react/no-unescaped-entities': 'error',
     'react/no-unknown-property': 'error',
@@ -101,13 +105,14 @@ module.exports = {
     'react/self-closing-comp': 'error',
     // disabled until https://github.com/yannickcr/eslint-plugin-react/pull/685 is merged
     'react/sort-comp': [
-      'off',
+      'error',
       {
         order: [
           'type-annotations',
+          'instance-variables',
           'static-methods',
           'lifecycle',
-          '/^on.+$/',
+          '/^handle.+$/',
           '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
           'everything-else',
           '/^render.+$/',

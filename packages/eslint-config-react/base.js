@@ -103,14 +103,13 @@ module.exports = {
     'react/require-optimization': 'off',
     'react/require-render-return': 'error',
     'react/self-closing-comp': 'error',
-    // disabled until https://github.com/yannickcr/eslint-plugin-react/pull/685 is merged
     'react/sort-comp': [
       'error',
       {
         order: [
           'type-annotations',
-          'instance-variables',
           'static-methods',
+          'instance-variables',
           'lifecycle',
           '/^handle.+$/',
           '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',

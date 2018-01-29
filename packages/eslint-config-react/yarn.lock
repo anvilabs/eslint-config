@@ -279,14 +279,7 @@ del@^2.0.2:
     pinkie-promise "^2.0.0"
     rimraf "^2.2.8"
 
-doctrine@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-2.0.0.tgz#c73d8d2909d22291e1a007a395804da8b665fe63"
-  dependencies:
-    esutils "^2.0.2"
-    isarray "^1.0.0"
-
-doctrine@^2.1.0:
+doctrine@^2.0.2, doctrine@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-2.1.0.tgz#5cd01fc101621b42c4cd7f5d1a66243716d3f39d"
   dependencies:
@@ -367,17 +360,23 @@ eslint-plugin-jsx-a11y@^6.0.3:
     emoji-regex "^6.1.0"
     jsx-ast-utils "^2.0.0"
 
-eslint-plugin-react-native@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native/-/eslint-plugin-react-native-3.2.0.tgz#3ec47907858bd07275248bef2de3142ee5c1efb1"
+eslint-plugin-react-native-globals@^0.1.1:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native-globals/-/eslint-plugin-react-native-globals-0.1.2.tgz#ee1348bc2ceb912303ce6bdbd22e2f045ea86ea2"
 
-eslint-plugin-react@^7.5.1:
-  version "7.5.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.5.1.tgz#52e56e8d80c810de158859ef07b880d2f56ee30b"
+eslint-plugin-react-native@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native/-/eslint-plugin-react-native-3.2.1.tgz#04fcadd3285b7cd2f27146e640c941b00acc4e7e"
   dependencies:
-    doctrine "^2.0.0"
+    eslint-plugin-react-native-globals "^0.1.1"
+
+eslint-plugin-react@^7.6.1:
+  version "7.6.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.6.1.tgz#5d0e908be599f0c02fbf4eef0c7ed6f29dff7633"
+  dependencies:
+    doctrine "^2.0.2"
     has "^1.0.1"
-    jsx-ast-utils "^2.0.0"
+    jsx-ast-utils "^2.0.1"
     prop-types "^15.6.0"
 
 eslint-rule-documentation@^1.0.0:
@@ -745,7 +744,7 @@ is-symbol@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-symbol/-/is-symbol-1.0.1.tgz#3cc59f00025194b6ab2e38dbae6689256b660572"
 
-isarray@^1.0.0, isarray@~1.0.0:
+isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
 
@@ -797,7 +796,7 @@ jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
 
-jsx-ast-utils@^2.0.0:
+jsx-ast-utils@^2.0.0, jsx-ast-utils@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-2.0.1.tgz#e801b1b39985e20fffc87b40e3748080e2dcac7f"
   dependencies:

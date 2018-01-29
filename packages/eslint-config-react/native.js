@@ -2,13 +2,7 @@ module.exports = {
   extends: ['./base.js'],
   plugins: ['react-native'],
   globals: {
-    __DEV__: false,
-    cancelAnimationFrame: false,
-    cancelIdleCallback: false,
-    fetch: false,
-    navigator: false,
-    requestAnimationFrame: false,
-    requestIdleCallback: false,
+    'react-native/react-native': true,
   },
   settings: {
     'import/resolver': {

@@ -60,7 +60,7 @@ module.exports = {
     'react/jsx-no-literals': 'off',
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
-    'react/jsx-one-expression-per-line': 'error',
+    'react/jsx-one-expression-per-line': 'off',
     'react/jsx-pascal-case': ['error', {allowAllCaps: true, ignore: []}],
     'react/jsx-sort-default-props': 'off',
     'react/jsx-sort-prop-types': 'off', // deprecated in favor of react/jsx-sort-props

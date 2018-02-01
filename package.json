@@ -28,7 +28,7 @@
     "semantic-release": "lerna run semantic-release"
   },
   "lint-staged": {
-    "{*.js,scripts/*.js,packages/*/{*.js,{rules,test}/**/*.js}": [
+    "{*.js,scripts/*.js,packages/*/{*.js,{rules,test}/**/*.js}}": [
       "yarn run lint-fix",
       "git add"
     ],

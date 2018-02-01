@@ -43,9 +43,9 @@
     "testRegex": "/__tests__/.+-test\\.js$"
   },
   "devDependencies": {
+    "@anvilabs/commitlint-config": "^1.0.0",
     "@anvilabs/eslint-config": "file:./packages/eslint-config",
     "@commitlint/cli": "^6.0.2",
-    "@commitlint/config-conventional": "^6.0.2",
     "eslint": "^4.16.0",
     "husky": "^0.14.3",
     "jest": "^22.1.4",

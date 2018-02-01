@@ -25,10 +25,7 @@
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
     "prepush": "yarn test",
-    "semantic-release":
-      "semantic-release pre && node scripts/publish.js && semantic-release post",
-    "outdated":
-      "for P in $(ls packages); do echo '\\n' === $P ===; cd \"packages/$P/\"; yarn outdated; cd ../..; done"
+    "semantic-release": "lerna run semantic-release"
   },
   "lint-staged": {
     "{*.js,scripts/*.js,packages/*/{*.js,{rules,test}/**/*.js}": [
@@ -52,8 +49,7 @@
     "lerna": "^2.8.0",
     "lint-staged": "^6.1.0",
     "npm-run-all": "^4.1.2",
-    "prettier": "^1.10.2",
-    "semantic-release": "^8.2.0"
+    "prettier": "^1.10.2"
   },
   "dependencies": {}
 }

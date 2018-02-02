@@ -1,4 +1,5 @@
 {
+  "editor.formatOnSave": false,
   "editor.insertSpaces": true,
   "editor.rulers": [80],
   "editor.tabSize": 2,
@@ -8,9 +9,10 @@
 
   "eslint.autoFixOnSave": true,
 
+  "files.autoSave": "off",
   "files.exclude": {
     ".eslintcache": true
   },
 
-  "prettier.javascriptEnable": []
+  "prettier.disableLanguages": ["javascript"]
 }

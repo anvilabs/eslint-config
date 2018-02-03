@@ -6,13 +6,13 @@
   "engines": {
     "node": ">=6.0.0"
   },
+  "workspaces": [
+    "packages/@anvilabs/eslint-config",
+    "packages/@anvilabs/eslint-config-react",
+    "packages/@anvilabs/eslint-config-typescript"
+  ],
   "scripts": {
     "format": "prettier --write",
-    "preinstall": "yarn run clean-yarn-cache",
-    "postinstall": "lerna bootstrap",
-    "clean-install":
-      "lerna clean; rm -rf node_modules; yarn run clean-yarn-cache",
-    "clean-yarn-cache": "rm -rf $(yarn cache dir)/*eslint-config*",
     "lint": "eslint --cache",
     "lint-all": "yarn run lint .",
     "lint-fix": "yarn run lint --fix",

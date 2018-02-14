@@ -52,6 +52,7 @@ module.exports = {
       },
     ],
     // https://github.com/asn007/eslint-plugin-codebox
+    'codebox/sort-imports': 'off',
     'codebox/sort-named-imports': ['error', {ignoreCase: false}],
     // https://github.com/mysticatea/eslint-plugin-eslint-comments
     'eslint-comments/disable-enable-pair': 'error',

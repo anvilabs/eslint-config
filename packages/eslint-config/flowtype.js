@@ -12,7 +12,9 @@ module.exports = {
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/boolean-style': ['error', 'boolean'],
     'flowtype/define-flow-type': 'error',
+    'flowtype/newline-after-flow-annotation': 'off',
     'flowtype/no-dupe-keys': 'error',
+    'flowtype/no-existential-type': 'off',
     'flowtype/no-flow-fix-me-comments': 'off',
     'flowtype/no-mutable-array': 'error',
     'flowtype/no-primitive-constructor-types': 'error',

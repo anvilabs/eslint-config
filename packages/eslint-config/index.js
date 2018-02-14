@@ -118,6 +118,7 @@ module.exports = {
     // https://github.com/sindresorhus/eslint-plugin-unicorn
     'unicorn/catch-error-name': 'off',
     'unicorn/custom-error-definition': 'off',
+    'unicorn/error-message': 'error',
     'unicorn/escape-case': 'error',
     'unicorn/explicit-length-check': ['error', {'non-zero': 'not-equal'}],
     'unicorn/filename-case': 'off',
@@ -129,7 +130,10 @@ module.exports = {
     'unicorn/no-hex-escape': 'error',
     'unicorn/no-new-buffer': 'error',
     'unicorn/no-process-exit': 'error',
+    'unicorn/no-unsafe-regex': 'off',
     'unicorn/number-literal-case': 'off', // conflicts with prettier
+    'unicorn/prefer-add-event-listener': 'error',
+    'unicorn/prefer-spread': 'error',
     'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/prefer-type-error': 'off',
     'unicorn/regex-shorthand': 'error',

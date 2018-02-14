@@ -16,6 +16,7 @@ Module._resolveFilename = (original =>
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: [
+    'codebox',
     'eslint-comments',
     'local',
     'no-use-extend-native',

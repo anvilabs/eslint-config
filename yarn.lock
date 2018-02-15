@@ -209,7 +209,7 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@octokit/rest@^14.0.9":
+"@octokit/rest@^14.0.3", "@octokit/rest@^14.0.9":
   version "14.0.9"
   resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-14.0.9.tgz#d5e0a00dcb78901dd7b2ef852acfc0aea7c479ef"
   dependencies:
@@ -230,9 +230,24 @@
     import-from "^2.1.0"
     lodash "^4.17.4"
 
-"@semantic-release/error@^2.2.0":
+"@semantic-release/error@^2.1.0", "@semantic-release/error@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
+
+"@semantic-release/github@^4.0.2":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-4.0.3.tgz#e3ecd1f46221e9688a6686a59c3703be2e498c9e"
+  dependencies:
+    "@octokit/rest" "^14.0.3"
+    "@semantic-release/error" "^2.1.0"
+    debug "^3.1.0"
+    fs-extra "^5.0.0"
+    globby "^7.1.1"
+    lodash "^4.17.4"
+    mime "^2.0.3"
+    p-reduce "^1.0.0"
+    parse-github-url "^1.0.1"
+    url-join "^4.0.0"
 
 "@semantic-release/github@^4.1.0":
   version "4.1.2"
@@ -250,6 +265,19 @@
     p-reduce "^1.0.0"
     parse-github-url "^1.0.1"
     url-join "^4.0.0"
+
+"@semantic-release/npm@^3.0.0":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-3.0.2.tgz#b2063ff8baa217a808fe057428efbd8fc8aa9204"
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    execa "^0.9.0"
+    fs-extra "^5.0.0"
+    lodash "^4.17.4"
+    nerf-dart "^1.0.0"
+    normalize-url "^2.0.1"
+    read-pkg "^3.0.0"
+    registry-auth-token "^3.3.1"
 
 "@semantic-release/npm@^3.1.0":
   version "3.1.0"
@@ -2444,6 +2472,17 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
+globby@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-7.1.1.tgz#fb2ccff9401f8600945dfada97440cca972b8680"
+  dependencies:
+    array-union "^1.0.1"
+    dir-glob "^2.0.0"
+    glob "^7.1.2"
+    ignore "^3.3.5"
+    pify "^3.0.0"
+    slash "^1.0.0"
+
 globby@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/globby/-/globby-8.0.0.tgz#e6f8340ead9a52fa417ec0e75ae664ae0026f5c6"
@@ -4330,6 +4369,10 @@ p-reduce@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-reduce/-/p-reduce-1.0.0.tgz#18c2b0dd936a4690a529f8231f58a0fdb6a47dfa"
 
+p-reflect@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/p-reflect/-/p-reflect-1.0.0.tgz#f4fa1ee1bb546d8eb3ec0321148dfe0a79137bb8"
+
 p-try@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
@@ -4989,6 +5032,36 @@ semantic-release-plugin-decorators@^1.2.1:
   dependencies:
     import-from "^2.1.0"
     lodash "^4.17.4"
+
+semantic-release@13.2.0:
+  version "13.2.0"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-13.2.0.tgz#e3645309054483a0dc7772034e1d309da8f14b4d"
+  dependencies:
+    "@semantic-release/commit-analyzer" "^5.0.0"
+    "@semantic-release/error" "^2.1.0"
+    "@semantic-release/github" "^4.0.2"
+    "@semantic-release/npm" "^3.0.0"
+    "@semantic-release/release-notes-generator" "^6.0.0"
+    aggregate-error "^1.0.0"
+    chalk "^2.3.0"
+    commander "^2.11.0"
+    cosmiconfig "^4.0.0"
+    debug "^3.1.0"
+    env-ci "^1.0.0"
+    execa "^0.9.0"
+    get-stream "^3.0.0"
+    git-log-parser "^1.2.0"
+    git-url-parse "^8.1.0"
+    hook-std "^0.4.0"
+    lodash "^4.17.4"
+    marked "^0.3.9"
+    marked-terminal "^2.0.0"
+    p-locate "^2.0.0"
+    p-reduce "^1.0.0"
+    p-reflect "^1.0.0"
+    read-pkg-up "^3.0.0"
+    resolve-from "^4.0.0"
+    semver "^5.4.1"
 
 semantic-release@^13.4.1:
   version "13.4.1"

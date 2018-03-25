@@ -61,6 +61,7 @@ module.exports = {
     // https://github.com/nzakas/eslint-plugin-typescript
     'typescript/adjacent-overload-signatures': 'error',
     'typescript/class-name-casing': 'error',
+    'typescript/explicit-function-return-type': 'off',
     'typescript/explicit-member-accessibility': 'error',
     'typescript/interface-name-prefix': 'error',
     'typescript/member-delimiter-style': 'off',
@@ -71,6 +72,7 @@ module.exports = {
     'typescript/no-empty-interface': 'error',
     'typescript/no-explicit-any': 'off',
     'typescript/no-namespace': ['error', {allowDefinitionFiles: true}],
+    'typescript/no-non-null-assertion': 'off',
     'typescript/no-parameter-properties': 'off',
     'typescript/no-triple-slash-reference': 'error',
     'typescript/no-type-alias': 'off',

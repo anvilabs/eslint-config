@@ -55,6 +55,7 @@ module.exports = {
       'error',
       {ignoreRefs: true, allowArrowFunctions: true, allowBind: false},
     ],
+    'react/jsx-max-depth': 'off',
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-duplicate-props': ['error', {ignoreCase: true}],
     'react/jsx-no-literals': 'off',

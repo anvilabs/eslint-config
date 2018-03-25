@@ -10,6 +10,7 @@ module.exports = {
     'jest/no-focused-tests': 'error',
     'jest/no-hooks': ['error', {allow: ['afterEach']}],
     'jest/no-identical-title': 'error',
+    'jest/no-jest-import': 'error',
     'jest/no-large-snapshots': 'off',
     'jest/no-test-prefixes': 'error',
     'jest/prefer-expect-assertions': 'off',

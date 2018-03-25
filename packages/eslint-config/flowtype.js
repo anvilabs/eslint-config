@@ -31,6 +31,7 @@ module.exports = {
     'flowtype/require-exact-type': 'off',
     'flowtype/require-parameter-type': 'off',
     'flowtype/require-return-type': 'off',
+    'flowtype/require-types-at-top': 'error',
     'flowtype/require-valid-file-annotation': [
       'error',
       'always',
@@ -41,6 +42,7 @@ module.exports = {
     'flowtype/require-variable-type': 'off',
     'flowtype/sort-keys': 'off',
     'flowtype/type-id-match': ['error', '^([A-Z][a-z0-9]+)+Type$'],
+    'flowtype/type-import-style': ['error', 'identifier'],
     'flowtype/use-flow-type': 'error',
     'flowtype/valid-syntax': 'off',
   },

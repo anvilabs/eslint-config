@@ -25,7 +25,7 @@ module.exports = {
       {boolean: true, number: true, string: true},
     ],
     'no-magic-numbers': [
-      'error',
+      'warn',
       {
         ignore: [-1, 0, 1],
         ignoreArrayIndexes: true,

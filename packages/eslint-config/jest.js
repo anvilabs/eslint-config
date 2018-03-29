@@ -5,10 +5,10 @@ module.exports = {
   },
   rules: {
     'jest/consistent-test-it': ['error', {fn: 'test', withinDescribe: 'it'}],
-    'jest/lowercase-name': 'error',
+    'jest/lowercase-name': 'off',
     'jest/no-disabled-tests': 'warn',
     'jest/no-focused-tests': 'error',
-    'jest/no-hooks': ['error', {allow: ['afterEach']}],
+    'jest/no-hooks': 'off',
     'jest/no-identical-title': 'error',
     'jest/no-jest-import': 'error',
     'jest/no-large-snapshots': 'off',

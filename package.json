@@ -31,13 +31,13 @@
     "{*.json,.vscode/*.json,packages/*/*.json}": ["yarn run format", "git add"]
   },
   "jest": {
-    "roots": ["<rootDir>/packages/eslint-config/rules/"],
+    "roots": ["<rootDir>/packages"],
     "testEnvironment": "node",
     "testRegex": "/__tests__/.+-test\\.js$"
   },
   "devDependencies": {
     "@anvilabs/commitlint-config": "^1.0.0",
-    "@anvilabs/eslint-config": "file:./packages/eslint-config",
+    "@anvilabs/eslint-config": "0.0.0-development",
     "@commitlint/cli": "^6.1.3",
     "eslint": "^4.19.1",
     "husky": "^0.14.3",

@@ -1,12 +1,6 @@
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
-  plugins: [
-    'eslint-comments',
-    'no-use-extend-native',
-    'prettier',
-    'promise',
-    'unicorn',
-  ],
+  plugins: ['eslint-comments', 'no-use-extend-native', 'promise', 'unicorn'],
   rules: {
     // http://eslint.org/docs/rules
     'no-warning-comments': [
@@ -70,21 +64,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     // https://github.com/dustinspecker/eslint-plugin-no-use-extend-native
     'no-use-extend-native/no-use-extend-native': 'error',
-    // https://github.com/not-an-aardvark/eslint-plugin-prettier
-    'prettier/prettier': [
-      'error',
-      {
-        useTabs: false,
-        printWidth: 80,
-        tabWidth: 2,
-        singleQuote: true,
-        trailingComma: 'all',
-        bracketSpacing: false,
-        jsxBracketSameLine: false,
-        parser: 'babylon',
-        semi: true,
-      },
-    ],
     // https://github.com/xjamundx/eslint-plugin-promise
     'promise/always-return': 'error',
     'promise/avoid-new': 'off',

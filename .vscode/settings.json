@@ -12,7 +12,5 @@
   "files.autoSave": "off",
   "files.exclude": {
     ".eslintcache": true
-  },
-
-  "prettier.disableLanguages": ["javascript"]
+  }
 }

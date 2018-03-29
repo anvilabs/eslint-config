@@ -2,13 +2,7 @@
   "name": "@anvilabs/eslint-config",
   "version": "0.0.0-development",
   "description": "Anvilabs' base ESLint config",
-  "keywords": [
-    "eslint",
-    "eslint config",
-    "config",
-    "anvilabs",
-    "styleguide"
-  ],
+  "keywords": ["eslint", "eslint config", "config", "anvilabs", "styleguide"],
   "repository": "anvilabs/eslint-config",
   "homepage": "https://github.com/anvilabs/eslint-config#readme",
   "bugs": {
@@ -27,9 +21,11 @@
   "scripts": {
     "find-new-rules:babel": "eslint-find-rules --unused test/fixtures/babel.js",
     "find-new-rules:base": "eslint-find-rules --unused index.js",
-    "find-new-rules:flowtype": "eslint-find-rules --unused test/fixtures/flowtype.js",
+    "find-new-rules:flowtype":
+      "eslint-find-rules --unused test/fixtures/flowtype.js",
     "find-new-rules:jest": "eslint-find-rules --unused test/fixtures/jest.js",
-    "find-new-rules:lodash": "eslint-find-rules --unused test/fixtures/lodash.js",
+    "find-new-rules:lodash":
+      "eslint-find-rules --unused test/fixtures/lodash.js",
     "find-new-rules": "run-p --silent find-new-rules:*",
     "semantic-release": "semantic-release"
   },
@@ -52,7 +48,6 @@
     "eslint-plugin-jest": "^21.15.0",
     "eslint-plugin-lodash-fp": "^2.1.3",
     "eslint-plugin-no-use-extend-native": "^0.3.12",
-    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-unicorn": "^4.0.2"
   },

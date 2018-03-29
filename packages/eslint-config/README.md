@@ -4,7 +4,7 @@
 [![Dependency Status](https://david-dm.org/anvilabs/eslint-config/status.svg?path=packages/eslint-config)](https://david-dm.org/anvilabs/eslint-config?path=packages/eslint-config)
 [![devDependency Status](https://david-dm.org/anvilabs/eslint-config/dev-status.svg?path=packages/eslint-config)](https://david-dm.org/anvilabs/eslint-config?path=packages/eslint-config&type=dev)
 
-Anvilabs' base ESLint config. Makes use of [prettier](https://github.com/jlongster/prettier) for formatting.
+Anvilabs' base ESLint config. Intended to be used together with [prettier](https://github.com/jlongster/prettier).
 
 ## Usage
 
@@ -71,10 +71,6 @@ Available configs include:
 - `'@anvilabs/eslint-config/jest'` for [Jest](https://facebook.github.io/jest/) related rules
 - `'@anvilabs/eslint-config/lodash'` for [Lodash](https://lodash.com/) related rules
 - `'@anvilabs/eslint-config/script'` for usage with config files or scripts
-
-### Things to know
-
-- Running ESLint will report an error if your code does not match prettier style. The rule is autofixable – if you run ESLint with the `--fix` flag, your code will be formatted according to prettier style.
 
 ## License
 

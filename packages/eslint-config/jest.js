@@ -4,6 +4,8 @@ module.exports = {
     'jest/globals': true,
   },
   rules: {
+    'max-nested-callbacks': 'off',
+    // https://github.com/jest-community/eslint-plugin-jest
     'jest/consistent-test-it': ['error', {fn: 'test', withinDescribe: 'it'}],
     'jest/lowercase-name': 'off',
     'jest/no-disabled-tests': 'warn',

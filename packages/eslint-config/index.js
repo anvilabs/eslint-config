@@ -22,7 +22,7 @@ module.exports = {
     'no-compare-neg-zero': 'error',
     'no-implicit-coercion': [
       'error',
-      {boolean: false, number: true, string: true},
+      {boolean: true, number: true, string: true},
     ],
     'no-magic-numbers': [
       'error',

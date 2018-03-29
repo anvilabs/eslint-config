@@ -16,7 +16,6 @@ Module._resolveFilename = (original =>
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: [
-    'codebox',
     'eslint-comments',
     'local',
     'no-use-extend-native',
@@ -51,9 +50,6 @@ module.exports = {
         detectObjects: false,
       },
     ],
-    // https://github.com/asn007/eslint-plugin-codebox
-    'codebox/sort-imports': 'off',
-    'codebox/sort-named-imports': ['error', {ignoreCase: false}],
     // https://github.com/mysticatea/eslint-plugin-eslint-comments
     'eslint-comments/disable-enable-pair': 'error',
     'eslint-comments/no-duplicate-disable': 'error',

@@ -70,6 +70,7 @@ Available configs include:
 - `'@anvilabs/eslint-config/flowtype'` for [Flow](https://flowtype.org/) related rules
 - `'@anvilabs/eslint-config/jest'` for [Jest](https://facebook.github.io/jest/) related rules
 - `'@anvilabs/eslint-config/lodash'` for [Lodash](https://lodash.com/) related rules
+- `'@anvilabs/eslint-config/script'` for usage with config files or scripts
 
 ### Things to know
 

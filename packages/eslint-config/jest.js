@@ -5,6 +5,8 @@ module.exports = {
   },
   rules: {
     'max-nested-callbacks': 'off',
+    // https://github.com/benmosher/eslint-plugin-import
+    'import/no-extraneous-dependencies': 'off',
     // https://github.com/jest-community/eslint-plugin-jest
     'jest/consistent-test-it': ['error', {fn: 'test', withinDescribe: 'it'}],
     'jest/lowercase-name': 'off',

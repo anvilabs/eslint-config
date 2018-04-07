@@ -48,7 +48,12 @@ module.exports = {
     ],
     // https://github.com/benmosher/eslint-plugin-import
     'import/exports-last': 'error',
+    'import/group-exports': 'error',
     'import/no-anonymous-default-export': 'error',
+    'import/no-cycle': 'off',
+    'import/no-default-export': 'off',
+    'import/no-self-import': 'error',
+    'import/no-useless-path-segments': 'error',
     'import/order': [
       'error',
       {

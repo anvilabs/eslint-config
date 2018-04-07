@@ -62,6 +62,7 @@ module.exports = {
     'typescript/no-parameter-properties': 'off', // TSLint is better at this
     'typescript/no-triple-slash-reference': 'off', // TSLint is better at this
     'typescript/no-type-alias': 'off', // TSLint is better at this
+    'typescript/no-var-requires': 'off', // TSLint is better at this
     'typescript/no-unused-vars': 'error',
     'typescript/no-use-before-define': [
       'error',

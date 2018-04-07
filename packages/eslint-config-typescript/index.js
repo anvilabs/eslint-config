@@ -11,6 +11,7 @@ module.exports = {
   },
   rules: {
     camelcase: 'off',
+    'no-array-constructor': 'off',
     'no-restricted-globals': 'off', // conflicts with typescript, @see https://github.com/eslint/typescript-eslint-parser/issues/350
     'no-undef': 'off', // conflicts with typescript
     'no-unused-vars': 'off', // disabled in favor of `typescript/no-unused-vars`
@@ -44,29 +45,29 @@ module.exports = {
     'import/no-named-as-default-member': 'off', // conflicts with typescript
     'import/no-named-as-default': 'off', // conflicts with typescript
     // https://github.com/nzakas/eslint-plugin-typescript
-    'typescript/adjacent-overload-signatures': 'error',
-    'typescript/class-name-casing': 'error',
+    'typescript/adjacent-overload-signatures': 'off', // TSLint is better at this
+    'typescript/class-name-casing': 'off', // TSLint is better at this
     'typescript/explicit-function-return-type': 'off',
-    'typescript/explicit-member-accessibility': 'error',
-    'typescript/interface-name-prefix': 'error',
+    'typescript/explicit-member-accessibility': 'off', // TSLint is better at this
+    'typescript/interface-name-prefix': 'off', // TSLint is better at this
     'typescript/member-delimiter-style': 'off',
     'typescript/member-naming': 'off',
-    'typescript/member-ordering': 'error',
-    'typescript/no-angle-bracket-type-assertion': 'error',
+    'typescript/member-ordering': 'off', // type annotations should come first
+    'typescript/no-angle-bracket-type-assertion': 'off', // TSLint is better at this
     'typescript/no-array-constructor': 'error',
-    'typescript/no-empty-interface': 'error',
-    'typescript/no-explicit-any': 'off',
-    'typescript/no-namespace': ['error', {allowDefinitionFiles: true}],
-    'typescript/no-non-null-assertion': 'off',
-    'typescript/no-parameter-properties': 'off',
-    'typescript/no-triple-slash-reference': 'error',
-    'typescript/no-type-alias': 'off',
+    'typescript/no-empty-interface': 'off', // TSLint is better at this
+    'typescript/no-explicit-any': 'off', // TSLint is better at this
+    'typescript/no-namespace': 'off', // TSLint is better at this
+    'typescript/no-non-null-assertion': 'off', // TSLint is better at this
+    'typescript/no-parameter-properties': 'off', // TSLint is better at this
+    'typescript/no-triple-slash-reference': 'off', // TSLint is better at this
+    'typescript/no-type-alias': 'off', // TSLint is better at this
     'typescript/no-unused-vars': 'error',
     'typescript/no-use-before-define': [
       'error',
       {functions: true, classes: true, variables: true},
     ],
-    'typescript/prefer-namespace-keyword': 'error',
-    'typescript/type-annotation-spacing': 'off',
+    'typescript/prefer-namespace-keyword': 'off', // TSLint is better at this
+    'typescript/type-annotation-spacing': 'off', // not necessary with prettier
   },
 };

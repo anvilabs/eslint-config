@@ -48,7 +48,7 @@ module.exports = {
     ],
     // https://github.com/benmosher/eslint-plugin-import
     'import/exports-last': 'error',
-    'import/group-exports': 'error',
+    'import/group-exports': 'off', // false positives wit import/export syntax
     'import/no-anonymous-default-export': 'error',
     'import/no-cycle': 'off',
     'import/no-default-export': 'off',

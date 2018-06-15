@@ -63,6 +63,7 @@ module.exports = {
     'react/jsx-no-undef': 'error',
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-pascal-case': ['error', {allowAllCaps: true, ignore: []}],
+    'react/jsx-props-no-multi-spaces': 'off', // not necessary with prettier
     'react/jsx-sort-default-props': 'off',
     'react/jsx-sort-prop-types': 'off', // deprecated in favor of react/jsx-sort-props
     'react/jsx-sort-props': 'off',

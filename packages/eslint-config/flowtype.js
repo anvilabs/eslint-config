@@ -10,6 +10,8 @@ module.exports = {
   rules: {
     'no-unused-expressions': 'off', // disabled in favor of `flowtype/no-unused-expressions`
     // https://github.com/gajus/eslint-plugin-flowtype
+    'flowtype/array-style-complex-type': ['error', 'shorthand'],
+    'flowtype/array-style-simple-type': ['error', 'shorthand'],
     'flowtype/boolean-style': ['error', 'boolean'],
     'flowtype/define-flow-type': 'error',
     'flowtype/newline-after-flow-annotation': 'off',

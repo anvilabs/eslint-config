@@ -47,6 +47,7 @@ module.exports = {
       },
     ],
     // https://github.com/benmosher/eslint-plugin-import
+    'import/dynamic-import-chunkname': 'error',
     'import/exports-last': 'error',
     'import/group-exports': 'off', // false positives wit import/export syntax
     'import/no-anonymous-default-export': 'error',

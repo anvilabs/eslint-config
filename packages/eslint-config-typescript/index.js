@@ -57,13 +57,14 @@ module.exports = {
     'typescript/no-array-constructor': 'error',
     'typescript/no-empty-interface': 'off', // TSLint is better at this
     'typescript/no-explicit-any': 'off', // TSLint is better at this
+    'typescript/no-inferrable-types': 'off', // TSLint is better at this
     'typescript/no-namespace': 'off', // TSLint is better at this
     'typescript/no-non-null-assertion': 'off', // TSLint is better at this
     'typescript/no-parameter-properties': 'off', // TSLint is better at this
     'typescript/no-triple-slash-reference': 'off', // TSLint is better at this
     'typescript/no-type-alias': 'off', // TSLint is better at this
-    'typescript/no-var-requires': 'off', // TSLint is better at this
     'typescript/no-unused-vars': 'error',
+    'typescript/no-var-requires': 'off', // TSLint is better at this
     'typescript/no-use-before-define': [
       'error',
       {functions: true, classes: true, variables: true},

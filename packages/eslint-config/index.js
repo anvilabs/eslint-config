@@ -53,6 +53,7 @@ module.exports = {
     'import/no-anonymous-default-export': 'error',
     'import/no-cycle': 'off',
     'import/no-default-export': 'off',
+    'import/no-relative-parent-imports': 'off',
     'import/no-self-import': 'error',
     'import/no-useless-path-segments': 'error',
     'import/order': [

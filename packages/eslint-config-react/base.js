@@ -115,7 +115,7 @@ module.exports = {
           'instance-variables',
           'lifecycle',
           '/^handle.+$/',
-          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$|InitialProps$)).+$/',
           'everything-else',
           '/^render.+$/',
           'render',

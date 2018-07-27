@@ -19,6 +19,7 @@ module.exports = {
     'jest/no-large-snapshots': 'off',
     'jest/no-test-prefixes': 'error',
     'jest/prefer-expect-assertions': 'off',
+    'jest/prefer-inline-snapshots': 'off',
     'jest/prefer-to-be-null': 'error',
     'jest/prefer-to-be-undefined': 'error',
     'jest/prefer-to-have-length': 'error',

@@ -41,7 +41,7 @@
     "prettier": ">= 0.11.0"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "^8.2.6",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-import-resolver-babel-module": "^4.0.0",

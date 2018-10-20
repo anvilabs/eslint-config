@@ -6,6 +6,9 @@
   "[json]": {
     "editor.formatOnSave": true
   },
+  "[yaml]": {
+    "editor.formatOnSave": true
+  },
 
   "eslint.autoFixOnSave": true,
 

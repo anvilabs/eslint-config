@@ -2,13 +2,16 @@
 #
 .DS_Store
 
-# node.js
+# Node.js
 #
-/node_modules/
-/*.log
-/packages/*/node_modules/
-/packages/*/*.log
+node_modules/
+npm-debug.log
+yarn-error.log
 
 # ESLint
 #
 /.eslintcache
+
+# Lerna
+#
+lerna-debug.log

@@ -17,5 +17,6 @@ module.exports = {
     'babel/object-shorthand': 'off',
     'babel/quotes': 'off',
     'babel/semi': 'off',
+    'babel/valid-typeof': 'error',
   },
 };

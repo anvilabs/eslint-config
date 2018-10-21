@@ -3,6 +3,9 @@
   "editor.insertSpaces": true,
   "editor.rulers": [80],
   "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
   "[json]": {
     "editor.formatOnSave": true
   },

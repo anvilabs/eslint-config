@@ -41,6 +41,7 @@ module.exports = {
     // https://github.com/Intellicode/eslint-plugin-react-native
     'react-native/no-color-literals': 'error',
     'react-native/no-inline-styles': 'error',
+    'react-native/no-raw-text': 'error',
     'react-native/no-unused-styles': 'error',
     'react-native/split-platform-components': 'error',
   },

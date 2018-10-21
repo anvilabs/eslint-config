@@ -104,6 +104,7 @@ module.exports = {
     'unicorn/no-unsafe-regex': 'off',
     'unicorn/number-literal-case': 'off', // conflicts with prettier
     'unicorn/prefer-add-event-listener': 'error',
+    'unicorn/prefer-exponentiation-operator': 'error',
     'unicorn/prefer-spread': 'error',
     'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/prefer-type-error': 'off',

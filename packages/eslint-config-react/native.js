@@ -38,8 +38,6 @@ module.exports = {
         'native.jsx': 'never',
       },
     ],
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y
-    'jsx-a11y/accessible-emoji': 'off',
     // https://github.com/Intellicode/eslint-plugin-react-native
     'react-native/no-color-literals': 'error',
     'react-native/no-inline-styles': 'error',

@@ -95,7 +95,7 @@ module.exports = {
     'react/no-unused-state': 'error',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': ['error', 'always'],
-    'react/prefer-stateless-function': 'error',
+    'react/prefer-stateless-function': 'off',
     'react/prop-types': [
       'off',
       {ignore: [], customValidators: [], skipUndeclared: false},
@@ -115,7 +115,7 @@ module.exports = {
           'instance-variables',
           'lifecycle',
           '/^handle.+$/',
-          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$|InitialProps$)).+$/',
+          '/^(is|get|set)(?!(InitialState$|DefaultProps$|ChildContext$|InitialProps$)).+$/',
           'everything-else',
           '/^render.+$/',
           'render',

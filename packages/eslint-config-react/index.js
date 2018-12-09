@@ -12,8 +12,6 @@ module.exports = {
     },
   },
   rules: {
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y
-    'jsx-a11y/lang': 'error',
     // https://github.com/benmosher/eslint-plugin-import
     'import/extensions': [
       'error',
@@ -25,5 +23,7 @@ module.exports = {
         'web.jsx': 'never',
       },
     ],
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y
+    'jsx-a11y/lang': 'error',
   },
 };

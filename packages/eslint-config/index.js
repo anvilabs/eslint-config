@@ -10,7 +10,7 @@ module.exports = {
     'implicit-arrow-linebreak': 'off', // not necessary with prettier
     'max-depth': ['error', {max: 4}],
     'max-nested-callbacks': ['error', {max: 3}],
-    'max-params': ['error', {max: 3}],
+    'max-params': ['error', {max: 4}],
     'max-statements-per-line': ['error', {max: 1}],
     'newline-before-return': 'error',
     'no-compare-neg-zero': 'error',

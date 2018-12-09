@@ -49,6 +49,7 @@ module.exports = {
     'typescript/class-name-casing': 'off', // TSLint is better at this
     'typescript/explicit-function-return-type': 'off',
     'typescript/explicit-member-accessibility': 'off', // TSLint is better at this
+    'typescript/generic-type-naming': ['error', '^T[A-Z][a-zA-Z]+$'],
     'typescript/interface-name-prefix': 'off', // TSLint is better at this
     'typescript/member-delimiter-style': 'off',
     'typescript/member-naming': 'off',

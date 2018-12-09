@@ -69,6 +69,7 @@ Available configs include:
 - `'@anvilabs/eslint-config/babel-module'` for usage with [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 - `'@anvilabs/eslint-config/jest'` for [Jest](https://facebook.github.io/jest/) related rules
 - `'@anvilabs/eslint-config/lodash'` for [Lodash](https://lodash.com/) related rules
+- `'@anvilabs/eslint-config/ramda'` for [Ramda](https://ramdajs.com/) related rules
 - `'@anvilabs/eslint-config/script'` for usage with config files or scripts
 
 ## License

@@ -29,6 +29,7 @@
     "find-new-rules:base": "eslint-find-rules --unused index.js",
     "find-new-rules:jest": "eslint-find-rules --unused test/fixtures/jest.js",
     "find-new-rules:lodash": "eslint-find-rules --unused test/fixtures/lodash.js",
+    "find-new-rules:ramda": "eslint-find-rules --unused test/fixtures/ramda.js",
     "find-new-rules": "run-p --silent find-new-rules:*",
     "semantic-release": "semantic-release"
   },
@@ -51,6 +52,7 @@
     "eslint-plugin-lodash-fp": "^2.2.0-a1",
     "eslint-plugin-no-use-extend-native": "^0.3.12",
     "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-ramda": "^2.5.1",
     "eslint-plugin-unicorn": "^6.0.1"
   },
   "devDependencies": {}

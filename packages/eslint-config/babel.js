@@ -2,10 +2,12 @@ module.exports = {
   plugins: ['babel'],
   parser: 'babel-eslint',
   rules: {
+    camelcase: 'off',
     'no-unused-expressions': 'off', // disabled in favor of `babel/no-unused-expressions`
     // https://github.com/babel/eslint-plugin-babel
     'babel/array-bracket-spacing': 'off',
     'babel/arrow-parens': 'off',
+    'babel/camelcase': ['error', {properties: 'never'}],
     'babel/flow-object-type': 'off',
     'babel/func-params-comma-dangle': 'off',
     'babel/generator-star-spacing': 'off',

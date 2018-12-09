@@ -18,6 +18,16 @@
     "test": "run-p --silent --print-label lint find-new-rules prettier-check jest",
     "semantic-release": "lerna run semantic-release --concurrency 1"
   },
+  "prettier": {
+    "bracketSpacing": false,
+    "jsxBracketSameLine": false,
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",

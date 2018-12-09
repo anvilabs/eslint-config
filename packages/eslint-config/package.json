@@ -27,7 +27,6 @@
   "scripts": {
     "find-new-rules:babel": "eslint-find-rules --unused test/fixtures/babel.js",
     "find-new-rules:base": "eslint-find-rules --unused index.js",
-    "find-new-rules:flowtype": "eslint-find-rules --unused test/fixtures/flowtype.js",
     "find-new-rules:jest": "eslint-find-rules --unused test/fixtures/jest.js",
     "find-new-rules:lodash": "eslint-find-rules --unused test/fixtures/lodash.js",
     "find-new-rules": "run-p --silent find-new-rules:*",
@@ -47,7 +46,6 @@
     "eslint-import-resolver-babel-module": "^4.0.0",
     "eslint-plugin-babel": "^5.2.1",
     "eslint-plugin-eslint-comments": "^3.0.1",
-    "eslint-plugin-flowtype": "^3.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.25.1",
     "eslint-plugin-lodash-fp": "^2.2.0-a1",

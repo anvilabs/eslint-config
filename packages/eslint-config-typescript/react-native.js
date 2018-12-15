@@ -1,7 +1,8 @@
 module.exports = {
   settings: {
     'import/resolver': {
-      node: {
+      typescript: {
+        directory: process.cwd(),
         extensions: [
           '.js',
           '.jsx',

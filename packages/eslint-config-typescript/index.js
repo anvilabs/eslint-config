@@ -3,7 +3,8 @@ module.exports = {
   parser: 'typescript-eslint-parser',
   settings: {
     'import/resolver': {
-      node: {
+      typescript: {
+        directory: process.cwd(),
         extensions: ['.js', '.ts', '.json'],
       },
     },

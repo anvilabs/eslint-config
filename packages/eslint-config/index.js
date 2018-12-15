@@ -1,6 +1,12 @@
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
-  plugins: ['eslint-comments', 'no-use-extend-native', 'promise', 'unicorn'],
+  plugins: [
+    'eslint-comments',
+    'no-use-extend-native',
+    'promise',
+    'sort-imports-es6-autofix',
+    'unicorn',
+  ],
   rules: {
     // http://eslint.org/docs/rules
     'no-warning-comments': [
@@ -86,6 +92,15 @@ module.exports = {
     'promise/prefer-await-to-callbacks': 'off',
     'promise/prefer-await-to-then': 'error',
     'promise/valid-params': 'error',
+    // https://github.com/marudor/eslint-plugin-sort-imports-es6-autofix
+    'sort-imports-es6-autofix/sort-imports-es6': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreMemberSort: true,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+      },
+    ],
     // https://github.com/sindresorhus/eslint-plugin-unicorn
     'unicorn/catch-error-name': 'off',
     'unicorn/custom-error-definition': 'off',

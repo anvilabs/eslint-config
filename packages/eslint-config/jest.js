@@ -31,6 +31,7 @@ module.exports = {
     'jest/prefer-to-be-undefined': 'error',
     'jest/prefer-to-contain': 'error',
     'jest/prefer-to-have-length': 'error',
+    'jest/prefer-todo': 'error',
     'jest/require-tothrow-message': 'error',
     'jest/valid-describe': 'error',
     'jest/valid-expect-in-promise': 'error',

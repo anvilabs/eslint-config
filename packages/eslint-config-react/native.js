@@ -43,6 +43,7 @@ module.exports = {
     'react-native/no-inline-styles': 'error',
     'react-native/no-raw-text': 'off', // buggy (https://github.com/Intellicode/eslint-plugin-react-native/issues/210)
     'react-native/no-unused-styles': 'error',
+    'react-native/sort-styles': 'off',
     'react-native/split-platform-components': 'error',
   },
 };

@@ -41,6 +41,7 @@ module.exports = {
     'react/forbid-elements': 'off',
     'react/forbid-foreign-prop-types': 'off',
     'react/forbid-prop-types': ['error', {forbid: ['any', 'array', 'object']}],
+    'react/jsx-fragments': ['error', 'syntax'],
     'react/jsx-boolean-value': ['error', 'never'],
     'react/jsx-child-element-spacing': 'off', // TODO: remove once `eslint-config-prettier` adds this
     'react/jsx-curly-brace-presence': ['error', 'never'],

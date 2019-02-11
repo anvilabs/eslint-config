@@ -41,16 +41,16 @@
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-eslint-comments": "^3.0.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.1.2",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-eslint-comments": "^3.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.2.2",
     "eslint-plugin-lodash-fp": "^2.2.0-a1",
-    "eslint-plugin-no-use-extend-native": "^0.3.12",
+    "eslint-plugin-no-use-extend-native": "^0.4.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-ramda": "^2.5.1",
     "eslint-plugin-sort-imports-es6-autofix": "^0.3.0",
-    "eslint-plugin-unicorn": "^6.0.1"
+    "eslint-plugin-unicorn": "^7.1.0"
   },
   "devDependencies": {}
 }

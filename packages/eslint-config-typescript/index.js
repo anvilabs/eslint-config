@@ -1,5 +1,4 @@
 module.exports = {
-  extends: ['prettier/@typescript-eslint'],
   plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   settings: {
@@ -48,14 +47,13 @@ module.exports = {
     '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/explicit-function-return-type': 'warn',
     '@typescript-eslint/explicit-member-accessibility': 'error',
-    indent: 'off',
     '@typescript-eslint/generic-type-naming': [
       'error',
       '^([TUKV]|T[A-Z][a-zA-Z]+)$',
     ],
-    '@typescript-eslint/indent': 'error',
+    '@typescript-eslint/indent': 'off',
     '@typescript-eslint/interface-name-prefix': 'error',
-    '@typescript-eslint/member-delimiter-style': 'error',
+    '@typescript-eslint/member-delimiter-style': 'off',
     '@typescript-eslint/member-naming': 'off',
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
@@ -92,7 +90,7 @@ module.exports = {
     '@typescript-eslint/prefer-interface': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/promise-function-async': 'off',
-    '@typescript-eslint/type-annotation-spacing': 'error',
+    '@typescript-eslint/type-annotation-spacing': 'off',
     '@typescript-eslint/restrict-plus-operands': 'error',
   },
 };

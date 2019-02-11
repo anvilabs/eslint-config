@@ -1,7 +1,7 @@
 module.exports = {
   plugins: ['jest'],
   env: {
-    'jest/globals': true,
+    jest: true,
   },
   rules: {
     'max-nested-callbacks': 'off',
